@@ -1,0 +1,252 @@
+{
+  "root": {
+    "props": {}
+  },
+  "content": [
+    {
+      "type": "Hero",
+      "props": {
+        "id": "Hero-1",
+        "eyebrow": "Studio de numérisation spatiale & valorisation 3D",
+        "title": "Donnez à vos lieux d’exception une empreinte numérique vivante.",
+        "subtitle": "Photo, drone et 3D temps réel, réunis dans une seule visite à parcourir librement.",
+        "cta1Label": "Explorer une démo en direct",
+        "cta1Href": "#projets",
+        "cta2Label": "Estimer un projet",
+        "cta2Href": "#contact",
+        "placeholder": "Insérer la meilleure démo 3D / WebGL ici (plein écran, chargement rapide)",
+        "src": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=2800,fit=crop/lOwyOFgKJYE9QlkE/capture-d-ecran-2026-10-28-143907-tNs3t9nrvqOInUtk.png"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "id": "ProjectsRail-1",
+        "title": "Des lieux réels, des résultats concrets",
+        "lead": "Choisissez votre univers pour voir les projets qui vous ressemblent.",
+        "tags": [
+          {
+            "label": "Patrimoine & Monuments",
+            "key": "patrimoine"
+          },
+          {
+            "label": "Domaines & Immobilier d’exception",
+            "key": "domaine"
+          },
+          {
+            "label": "Espaces naturels & Loisirs",
+            "key": "nature"
+          },
+          {
+            "label": "Collections & Particuliers",
+            "key": "collection"
+          }
+        ],
+        "projects": [
+          {
+            "cat": "patrimoine domaine",
+            "place": "Les Mureaux",
+            "name": "Château de Bècheville",
+            "text": "5 niveaux, 58 salles. [[Toute la visite est consultable en ligne, sans se déplacer.]]",
+            "value": "3 000 m²",
+            "placeholder": "Démo ou image : Château de Bècheville",
+            "src": ""
+          },
+          {
+            "cat": "domaine nature",
+            "place": "Fontenay-Saint-Père",
+            "name": "Domaine du Grand Charme",
+            "text": "Extérieurs captés par drone. [[Une application WebGL utilisable en rendez-vous de vente.]]",
+            "value": "8 hectares",
+            "placeholder": "Démo ou image : Domaine du Grand Charme",
+            "src": ""
+          },
+          {
+            "cat": "domaine",
+            "place": "Wy-dit-Joli-Village",
+            "name": "Domaine d’Hazeville",
+            "text": "Habitation optimisée à 25 Mo. [[La visite s’ouvre en quelques secondes, même en 4G.]]",
+            "value": "4 hectares",
+            "placeholder": "Démo ou image : Domaine d’Hazeville",
+            "src": ""
+          },
+          {
+            "cat": "patrimoine nature",
+            "place": "Guermantes",
+            "name": "Château de Guermantes",
+            "text": "Parc de 80 hectares. [[Première livraison en 5 jours pour valider le parcours.]]",
+            "value": "80 hectares",
+            "placeholder": "Démo ou image : Château de Guermantes",
+            "src": ""
+          }
+        ],
+        "gains": [
+          {
+            "title": "Ouvrir l’inaccessible",
+            "text": "Visitez un lieu fragile ou fermé, depuis n’importe quel écran."
+          },
+          {
+            "title": "Vendre plus vite",
+            "text": "Des acquéreurs mieux informés, moins de visites inutiles."
+          },
+          {
+            "title": "Transmettre",
+            "text": "Infobulles et vidéos animées pour guider le public."
+          },
+          {
+            "title": "Archiver avec précision",
+            "text": "L’état exact d’un lieu ou d’un objet, mesurable."
+          }
+        ]
+      }
+    },
+    {
+      "type": "BeforeAfter",
+      "props": {
+        "id": "BeforeAfter-1",
+        "title": "Voyez la différence",
+        "text": "Faites glisser pour passer d’une photo classique à la scène 3D que le visiteur parcourt.",
+        "quote": "[[« Nos visiteurs découvraient le domaine en deux clics, et les demandes de visite ont doublé en trois mois. »]]",
+        "author": "[[Prénom Nom, fonction, nom du domaine]]",
+        "labelBefore": "Photo",
+        "labelAfter": "3D",
+        "phBefore": "Photo classique du lieu",
+        "srcBefore": "",
+        "phAfter": "Même vue en 3D Gaussian Splatting",
+        "srcAfter": ""
+      }
+    },
+    {
+      "type": "Stats",
+      "props": {
+        "id": "Stats-1",
+        "title": "Rapide à capter, léger à diffuser, précis à mesurer",
+        "items": [
+          {
+            "value": "5 jours",
+            "title": "Première livraison",
+            "text": "Sur le parc de 80 ha du Château de Guermantes. Vous validez vite, vous ajustez ensuite."
+          },
+          {
+            "value": "½ journée",
+            "title": "Pour 8 hectares",
+            "text": "Captés au drone au Domaine du Grand Charme. Peu d’immobilisation du site."
+          },
+          {
+            "value": "25 Mo",
+            "title": "Pour 4 hectares",
+            "text": "Domaine d’Hazeville. [[Une visite fluide sur mobile, sans application à installer.]]"
+          },
+          {
+            "value": "1-2 mm",
+            "title": "Objets · 1-5 cm en intérieur",
+            "text": "[[Assez précis pour mesurer, restaurer ou assurer une pièce.]]"
+          }
+        ],
+        "note": "3 000 m² d’intérieurs scannés en 10 jours au Château de Bècheville."
+      }
+    },
+    {
+      "type": "Method",
+      "props": {
+        "id": "Method-1",
+        "title": "Notre méthode en trois étapes",
+        "steps": [
+          {
+            "title": "1. Capture terrain",
+            "text": "Un binôme sur place : opérateur 3D et télépilote certifié.",
+            "chips": "Drone, DSLR, Scanner 3D, Studio light, Polarisation croisée",
+            "placeholder": "Photo de terrain",
+            "src": ""
+          },
+          {
+            "title": "2. Traitement 3D",
+            "text": "Nettoyage, assemblage et optimisation du modèle.",
+            "chips": "Nettoyage, Assemblage, Optimisation",
+            "placeholder": "Capture de l’interface de traitement",
+            "src": ""
+          },
+          {
+            "title": "3. Publication sur mesure",
+            "text": "Une expérience à votre image, en ligne.",
+            "chips": "Navigation libre ou à pied, Infobulles, Vidéos animées",
+            "placeholder": "Rendu final",
+            "src": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "Pricing",
+      "props": {
+        "id": "Pricing-1",
+        "title": "Combien coûte un projet ?",
+        "lead": "Trois formats types pour situer votre budget. Le devis exact suit sous [[48 h]].",
+        "plans": [
+          {
+            "name": "Pièce ou objet",
+            "price": "[[dès 1 500 €]]",
+            "text": "Un objet de collection ou une pièce, précision millimétrique, visionneuse web.",
+            "highlight": "non"
+          },
+          {
+            "name": "Habitation ou domaine",
+            "price": "[[dès 4 500 €]]",
+            "text": "Intérieurs et extérieurs de 1 à 5 ha, visite WebGL et vidéo de présentation.",
+            "highlight": "oui"
+          },
+          {
+            "name": "Grand site ou parc",
+            "price": "[[sur devis]]",
+            "text": "Plusieurs dizaines d’hectares ou de niveaux, site web dédié, livraisons par étapes.",
+            "highlight": "non"
+          }
+        ],
+        "criteria": [
+          {
+            "title": "Surface et complexité",
+            "text": "hectares, m², hauteur, densité."
+          },
+          {
+            "title": "Périmètre",
+            "text": "extérieur, intérieur ou combiné."
+          },
+          {
+            "title": "Niveau de détail",
+            "text": "ambiance web ou précision millimétrique."
+          },
+          {
+            "title": "Livrables",
+            "text": "WebGL, site web, vidéos animées."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-1",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-1",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ],
+  "zones": {}
+}
