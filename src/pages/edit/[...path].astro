@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Editor from "../../puck/Editor";
+
+export function getStaticPaths() {
+  const files = Object.keys(import.meta.glob("../../data/**/*.json"));
+  return files.map((f) => ({ params: { path: f.replace("../../data/", "").replace(".json", "") } }));
+}
+if (import.meta.env.PROD) return Astro.redirect("/");
+const { path } = Astro.params;
+---
+<Layout title="Éditeur" noindex>
+  <Editor path={path as string} client:only="react" />
+</Layout>

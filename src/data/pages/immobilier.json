@@ -1,0 +1,177 @@
+{
+  "root": {
+    "props": {
+      "title": "Immobilier, architecture, chantier | Visite 3D et suivi de chantier",
+      "description": "Une 3D fidèle du site et du projet pour mieux se projeter, filtrer les acquéreurs et montrer l’avancement d’un chantier."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Acquéreurs, promoteurs, architectes",
+        "title": "Donnez envie avant la visite, rassurez pendant le chantier.",
+        "intro": "Une 3D fidèle du site et du projet, pour décider plus vite et mieux se projeter.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "Voir les projets",
+        "cta2Href": "#projets",
+        "placeholder": "Démo : visite d’une habitation",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "ProblemSolution",
+      "props": {
+        "title": "Ce que vous nous dites, ce que nous faisons",
+        "rows": [
+          {
+            "problem": "Mes acheteurs ne se projettent pas sur plan.",
+            "solution": "Le site réel est capté et le projet y est intégré. Démo en préparation.",
+            "proof": "Prévisualisation : en attente de confirmation du client.",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Je veux des acheteurs déjà convaincus.",
+            "solution": "La visite 3D filtre : l’acheteur vient voir un bien qu’il connaît déjà. Elle ne remplace pas la visite physique.",
+            "proof": "Domaine d’Hazeville (habitation).",
+            "href": "/projets/hazeville",
+            "status": "ok"
+          },
+          {
+            "problem": "Mon client est loin et s’inquiète de l’avancement.",
+            "solution": "Des captures datées du chantier, à partager à distance. Nous montrons l’avancement, pas la conformité.",
+            "proof": "Suivi de chantier.",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Je veux valoriser une réalisation d’architecte.",
+            "solution": "Une réalisation parcourue en 3D, présentable à de futurs clients.",
+            "proof": "Domaine d’Hazeville.",
+            "href": "/projets/hazeville",
+            "status": "ok"
+          }
+        ],
+        "id": "ProblemSolution-1"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "title": "Projets de ce secteur",
+        "lead": "",
+        "tags": [],
+        "projects": [
+          {
+            "cat": "domaine immobilier",
+            "place": "Wy-dit-Joli-Village",
+            "name": "Domaine d’Hazeville",
+            "text": "Habitation optimisée pour un chargement léger.",
+            "value": "4 ha · 25 Mo",
+            "placeholder": "Démo ou image : Domaine d’Hazeville",
+            "src": "",
+            "href": "/projets/hazeville",
+            "status": "publie"
+          },
+          {
+            "cat": "immobilier",
+            "place": "",
+            "name": "Projet en attente",
+            "text": "Emplacement réservé : prévisualisation d’un projet, en attente de confirmation du client.",
+            "value": "",
+            "placeholder": "Projet en attente",
+            "src": "",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "cat": "immobilier",
+            "place": "",
+            "name": "Projet en attente",
+            "text": "Emplacement réservé : suivi de chantier daté.",
+            "value": "",
+            "placeholder": "Projet en attente",
+            "src": "",
+            "href": "",
+            "status": "attente"
+          }
+        ],
+        "gains": [],
+        "id": "ProjectsRail-2"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[Mes clients à l’étranger ont pu valider avant de se déplacer.]]",
+            "author": "[[Prénom Nom, agent immobilier]]"
+          },
+          {
+            "text": "[[Le client voit où en est le chantier sans venir sur place.]]",
+            "author": "[[Prénom Nom, architecte]]"
+          }
+        ],
+        "id": "Quotes-3"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Faites-vous des plans ou des relevés de géomètre ?",
+            "a": "Non : notre travail est de créer des rendus pour la communication. Pour des plans, nous vous orientons vers un géomètre ou un architecte."
+          },
+          {
+            "q": "La visite 3D remplace-t-elle une visite physique ?",
+            "a": "Non, elle prépare et filtre. [[Les acheteurs viennent en sachant ce qu’ils vont voir.]]"
+          },
+          {
+            "q": "À quelle fréquence capter un chantier ?",
+            "a": "[[À chaque étape clé, selon votre calendrier : fondations, hors d’eau, finitions.]]"
+          }
+        ],
+        "id": "Faq-4"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-5",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-6",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "root": {
+    "props": {
+      "title": "Objets et archivage 3D | Numérisation d’objets, mobilier et œuvres",
+      "description": "Modèles 3D fidèles et optimisés pour le web, pour archiver, vendre ou transmettre objets, mobilier et œuvres."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Objets d’art, mobilier, produits",
+        "title": "Vos pièces, en 3D, prêtes pour le web et pour la mémoire.",
+        "intro": "Un modèle fidèle, optimisé pour le web, conservé et réutilisable pour l’archivage, la vente ou la transmission.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "Voir les projets",
+        "cta2Href": "#projets",
+        "placeholder": "Démo : objet ou mobilier",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "ProblemSolution",
+      "props": {
+        "title": "Ce que vous nous dites, ce que nous faisons",
+        "rows": [
+          {
+            "problem": "Mon objet est fragile ou unique, je veux en garder une trace fidèle.",
+            "solution": "Une capture en ultra haute définition, un modèle conservé avec ses sources.",
+            "proof": "Trois chaises Louis XV, Domaine de Seraincourt.",
+            "href": "/projets/seraincourt",
+            "status": "ok"
+          },
+          {
+            "problem": "Mes modèles sont trop lourds pour mon site.",
+            "solution": "Une optimisation à quelques Mo pour un chargement fluide sur mobile.",
+            "proof": "Avant/après de poids.",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Mes pièces brillent et rendent mal en scan.",
+            "solution": "Un protocole dédié aux surfaces brillantes est en préparation : test prévu sur de la céramique.",
+            "proof": "Test sur céramique.",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Je veux inventorier ma collection pour l’assurance ou la transmission.",
+            "solution": "Un inventaire visuel en haute définition, avec sources conservées. Ce n’est pas une expertise de valeur.",
+            "proof": "Trois chaises Louis XV, Domaine de Seraincourt.",
+            "href": "/projets/seraincourt",
+            "status": "ok"
+          }
+        ],
+        "id": "ProblemSolution-1"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "title": "Projets de ce secteur",
+        "lead": "",
+        "tags": [],
+        "projects": [
+          {
+            "cat": "objets",
+            "place": "Domaine de Seraincourt",
+            "name": "Chaises Louis XV",
+            "text": "Trois chaises captées en ultra haute définition, mobilier rescapé d’un incendie.",
+            "value": "Ultra HD",
+            "placeholder": "Démo ou image : Chaises Louis XV",
+            "src": "",
+            "href": "/projets/seraincourt",
+            "status": "publie"
+          },
+          {
+            "cat": "objets",
+            "place": "",
+            "name": "Projet en attente",
+            "text": "Emplacement réservé : test de céramique à l’étude.",
+            "value": "",
+            "placeholder": "Projet en attente",
+            "src": "",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "cat": "objets",
+            "place": "",
+            "name": "Projet en attente",
+            "text": "Emplacement réservé : optimisation d’un modèle pour une boutique en ligne.",
+            "value": "",
+            "placeholder": "Projet en attente",
+            "src": "",
+            "href": "",
+            "status": "attente"
+          }
+        ],
+        "gains": [],
+        "id": "ProjectsRail-2"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[Nos pièces sont documentées avant restauration, sans les manipuler davantage.]]",
+            "author": "[[Prénom Nom, conservateur ou propriétaire]]"
+          },
+          {
+            "text": "[[Le modèle s’affiche vite sur mobile dans notre boutique.]]",
+            "author": "[[Prénom Nom, artisan ou galeriste]]"
+          }
+        ],
+        "id": "Quotes-3"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Faites-vous des expertises ou des rapports d’état ?",
+            "a": "Non. Nous documentons visuellement ; l’estimation de valeur et l’authentification relèvent d’un expert."
+          },
+          {
+            "q": "Quelle précision pour les objets ?",
+            "a": "Jusqu’à 1-2 mm sur les objets, selon la pièce et la capture."
+          },
+          {
+            "q": "Quel poids pour un modèle destiné à une boutique en ligne ?",
+            "a": "[[Quelques Mo, avec des textures allégées, pour un affichage fluide sur mobile.]]"
+          }
+        ],
+        "id": "Faq-4"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-5",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-6",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "root": {
+    "props": {
+      "title": "Contact et tarifs | Estimer un projet de numérisation 3D",
+      "description": "Repères de tarifs et formulaire pour estimer votre projet de visite 3D, de numérisation ou d’archivage."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Contact",
+        "title": "Un lieu ou une pièce à valoriser ? Parlons-en.",
+        "intro": "Dites-nous où et quoi : nous revenons vers vous avec une première estimation.",
+        "cta1Label": "",
+        "cta1Href": "",
+        "cta2Label": "",
+        "cta2Href": "",
+        "placeholder": "Visuel ou photo du binôme",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "Pricing",
+      "props": {
+        "title": "Combien coûte un projet ?",
+        "lead": "Nos tarifs dépendent du temps d’investissement. Voici des repères.",
+        "plans": [
+          {
+            "name": "Captation drone, à la journée",
+            "price": "600 € HT",
+            "text": "Repère pour une journée de captation par un télépilote certifié.",
+            "highlight": "non"
+          },
+          {
+            "name": "Projet complet",
+            "price": "Sur devis",
+            "text": "Selon la surface, intérieur ou extérieur, le niveau d’optimisation et les livrables (site, vidéo).",
+            "highlight": "oui"
+          },
+          {
+            "name": "Exemple : plafonds d’un grand monument",
+            "price": "[[8 000 €]]",
+            "text": "Photogrammétrie à l’appareil photo, textures très détaillées, orthophotos, nuage de points. [[Publication à valider avec le client.]]",
+            "highlight": "non"
+          }
+        ],
+        "criteria": [
+          {
+            "title": "Surface et complexité",
+            "text": "hectares, m², hauteur, densité."
+          },
+          {
+            "title": "Périmètre",
+            "text": "extérieur, intérieur ou combiné."
+          },
+          {
+            "title": "Niveau de détail",
+            "text": "ambiance web ou détail très fin."
+          },
+          {
+            "title": "Livrables",
+            "text": "WebGL, site web, vidéos animées."
+          }
+        ],
+        "id": "Pricing-1"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Avant de nous écrire",
+        "items": [
+          {
+            "q": "Quels renseignements donner ?",
+            "a": "Le lieu, la surface approximative, le besoin (visite, archivage, vente) et le délai souhaité."
+          },
+          {
+            "q": "Sous quel délai répondez-vous ?",
+            "a": "[[Sous 48 h.]]"
+          }
+        ],
+        "id": "Faq-2"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-3",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-4",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

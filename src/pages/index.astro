@@ -1,0 +1,8 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageView from "../puck/PageView";
+import data from "../data/pages/accueil.json";
+---
+<Layout title={data.root.props.title} description={data.root.props.description}>
+  <PageView data={data as any} client:load />
+</Layout>
