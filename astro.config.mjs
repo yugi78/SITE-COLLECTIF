@@ -26,8 +26,8 @@ const savePuckData = () => ({
 });
 
 export default defineConfig({
-  site: 'https://yugi78.github.io',
-  base: '/SITE-COLLECTIF',
+  site: 'https://immersive.nlab.fr',
+  base: '/',
   integrations: [react()],
   vite: { plugins: [tailwindcss(), savePuckData()] },
 });
