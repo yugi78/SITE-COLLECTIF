@@ -1,0 +1,119 @@
+{
+  "root": {
+    "props": {
+      "title": "Domaine d’Hazeville | Réalisation",
+      "description": "Une habitation et 4 hectares optimisés pour un chargement léger."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Domaines · Immobilier · Wy-dit-Joli-Village",
+        "title": "Domaine d’Hazeville",
+        "intro": "Une habitation et 4 hectares optimisés pour un chargement léger.",
+        "cta1Label": "Estimer un projet similaire",
+        "cta1Href": "/contact",
+        "cta2Label": "Retour aux projets",
+        "cta2Href": "/#projets",
+        "placeholder": "Projet en attente : visuel principal",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "CaseStudy",
+      "props": {
+        "eyebrow": "Le projet",
+        "title": "Domaine d’Hazeville en détail",
+        "intro": "",
+        "placeholder": "Projet en attente : démo interactive",
+        "src": "",
+        "context": "[[Un domaine à présenter sur mobile, sans visite lourde à charger.]]",
+        "approach": "Captation, optimisation poussée des fichiers 3D, visite web.",
+        "delay": "[[À renseigner.]]",
+        "features": [],
+        "moments": [],
+        "id": "CaseStudy-1"
+      }
+    },
+    {
+      "type": "Stats",
+      "props": {
+        "title": "En chiffres",
+        "items": [
+          {
+            "value": "4 ha",
+            "title": "Habitation et terrain",
+            "text": "Un parcours unique."
+          },
+          {
+            "value": "25 Mo",
+            "title": "Poids total",
+            "text": "[[Temps de chargement mesuré sur mobile : à renseigner.]]"
+          }
+        ],
+        "note": "",
+        "id": "Stats-2"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[Un outil concret pour présenter le lieu à distance.]]",
+            "author": "[[Prénom Nom, fonction, Domaine d’Hazeville]]"
+          }
+        ],
+        "id": "Quotes-3"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions du client",
+        "items": [
+          {
+            "q": "[[Question du client à renseigner]]",
+            "a": "[[Réponse à renseigner]]"
+          }
+        ],
+        "id": "Faq-4"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-5",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-6",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

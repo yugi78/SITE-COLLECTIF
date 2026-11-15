@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageView from "../../puck/PageView";
+
+export function getStaticPaths() {
+  const files = import.meta.glob("../../data/projets/*.json", { eager: true }) as Record<string, { default: any }>;
+  return Object.entries(files).map(([p, m]) => ({ params: { slug: p.split("/").pop()!.replace(".json", "") }, props: { data: m.default } }));
+}
+const { data } = Astro.props;
+---
+<Layout title={data.root?.props?.title} description={data.root?.props?.description}>
+  <PageView data={data} client:load />
+</Layout>

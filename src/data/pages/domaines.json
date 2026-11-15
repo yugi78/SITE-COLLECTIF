@@ -1,0 +1,193 @@
+{
+  "root": {
+    "props": {
+      "title": "Domaines et lieux de réception | Visite 3D de châteaux et parcs",
+      "description": "Faites visiter votre domaine, ses extérieurs et ses ambiances depuis un lien, avant même la première visite."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Châteaux, parcs, mariages, séminaires",
+        "title": "Faites vivre votre domaine avant même la première visite.",
+        "intro": "Vos futurs clients (couples, organisateurs, acquéreurs) parcourent le lieu, ses extérieurs et ses ambiances depuis un lien, puis demandent à le visiter en connaissance de cause.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "Voir les projets",
+        "cta2Href": "#projets",
+        "placeholder": "Démo : domaine et ses extérieurs",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "ProblemSolution",
+      "props": {
+        "title": "Ce que vous nous dites, ce que nous faisons",
+        "rows": [
+          {
+            "problem": "Trop de visites pour des couples qui ne réservent pas.",
+            "solution": "Le prospect visite d’abord en ligne et ne demande une visite que s’il est convaincu.",
+            "proof": "Domaine du Grand Charme : 8 ha captés par drone, application WebGL.",
+            "href": "/projets/grand-charme",
+            "status": "ok"
+          },
+          {
+            "problem": "Les photos ne rendent pas justice au lieu.",
+            "solution": "Un parcours libre et photoréaliste, extérieurs et intérieurs réunis.",
+            "proof": "Domaine d’Hazeville : 4 ha, 25 Mo.",
+            "href": "/projets/hazeville",
+            "status": "ok"
+          },
+          {
+            "problem": "Et s’il pleut ? Et le soir ?",
+            "solution": "Captation à plusieurs moments de la journée, éclairage ajusté en post-production. Pas de captation de nuit.",
+            "proof": "Avant/après d’ambiance.",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Les demandes viennent de loin.",
+            "solution": "Un lien à envoyer en réponse à chaque demande, intégrable à votre site, avec un QR code.",
+            "proof": "Page projet Grand Charme",
+            "href": "/projets/grand-charme",
+            "status": "ok"
+          }
+        ],
+        "id": "ProblemSolution-1"
+      }
+    },
+    {
+      "type": "BeforeAfter",
+      "props": {
+        "title": "Le même lieu, à deux moments de la journée",
+        "text": "Faites glisser pour passer d’une ambiance à l’autre. L’éclairage est ajustable en post-production.",
+        "quote": "",
+        "author": "",
+        "labelBefore": "Jour",
+        "labelAfter": "Soir",
+        "phBefore": "Avant/après en attente : lumière de jour",
+        "phAfter": "Avant/après en attente : ambiance du soir",
+        "srcBefore": "",
+        "srcAfter": "",
+        "id": "BeforeAfter-2"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "title": "Projets de ce secteur",
+        "lead": "",
+        "tags": [],
+        "projects": [
+          {
+            "cat": "domaine",
+            "place": "Fontenay-Saint-Père",
+            "name": "Domaine du Grand Charme",
+            "text": "Extérieurs captés par drone en une demi-journée, application WebGL.",
+            "value": "8 hectares",
+            "placeholder": "Démo ou image : Domaine du Grand Charme",
+            "src": "",
+            "href": "/projets/grand-charme",
+            "status": "publie"
+          },
+          {
+            "cat": "domaine immobilier",
+            "place": "Wy-dit-Joli-Village",
+            "name": "Domaine d’Hazeville",
+            "text": "Habitation optimisée pour un chargement léger.",
+            "value": "4 ha · 25 Mo",
+            "placeholder": "Démo ou image : Domaine d’Hazeville",
+            "src": "",
+            "href": "/projets/hazeville",
+            "status": "publie"
+          },
+          {
+            "cat": "patrimoine domaine",
+            "place": "Guermantes",
+            "name": "Château de Guermantes",
+            "text": "Parc de 80 hectares. Première livraison en 5 jours.",
+            "value": "80 hectares",
+            "placeholder": "Démo ou image : Château de Guermantes",
+            "src": "",
+            "href": "/projets/guermantes",
+            "status": "publie"
+          }
+        ],
+        "gains": [],
+        "id": "ProjectsRail-3"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[Les couples arrivent en visite en sachant déjà où ils veulent se placer.]]",
+            "author": "[[Prénom Nom, propriétaire de domaine]]"
+          },
+          {
+            "text": "[[On répond à une demande lointaine par un lien, plus par un long mail.]]",
+            "author": "[[Prénom Nom, responsable événementiel]]"
+          }
+        ],
+        "id": "Quotes-4"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Pouvez-vous montrer l’espace avec une tente ou une installation ?",
+            "a": "[[Oui : nous pouvons capter le lieu avec et sans installation, ou ajouter les emplacements en infobulle.]]"
+          },
+          {
+            "q": "Comment le diffuser ?",
+            "a": "[[Par un lien, intégré à votre site en iframe, ou par un QR code sur vos documents.]]"
+          },
+          {
+            "q": "La captation dérange-t-elle l’activité ?",
+            "a": "[[Elle est planifiée hors des pics de fréquentation.]] 8 hectares se captent au drone en une demi-journée."
+          }
+        ],
+        "id": "Faq-5"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-6",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-7",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

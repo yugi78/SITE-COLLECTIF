@@ -1,0 +1,132 @@
+{
+  "root": {
+    "props": {
+      "title": "Chaises Louis XV | Réalisation",
+      "description": "Trois chaises de style Louis XV, rescapées d’un incendie, captées en ultra haute définition. [[À valider avec le domaine avant publication.]]"
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Objets · Archivage · Domaine de Seraincourt",
+        "title": "Chaises Louis XV",
+        "intro": "Trois chaises de style Louis XV, rescapées d’un incendie, captées en ultra haute définition. [[À valider avec le domaine avant publication.]]",
+        "cta1Label": "Estimer un projet similaire",
+        "cta1Href": "/contact",
+        "cta2Label": "Retour aux projets",
+        "cta2Href": "/#projets",
+        "placeholder": "Projet en attente : visuel principal",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "CaseStudy",
+      "props": {
+        "eyebrow": "Le projet",
+        "title": "Chaises Louis XV en détail",
+        "intro": "",
+        "placeholder": "Projet en attente : démo interactive",
+        "src": "",
+        "context": "Un mobilier ayant survécu à un incendie, à documenter avant restauration ou valorisation.",
+        "approach": "Capture en ultra haute définition de chaque chaise, modèle 3D optimisé pour le web, sources conservées.",
+        "delay": "[[À renseigner.]]",
+        "features": [],
+        "moments": [
+          {
+            "title": "Documenter avant un sinistre",
+            "text": "[[Un relevé visuel en haute définition facilite l’inventaire, l’assurance et la restauration en cas de sinistre.]]"
+          },
+          {
+            "title": "Après un sinistre",
+            "text": "[[Le modèle garde une trace fidèle des pièces rescapées, utile pour la restauration ou la reproduction.]]"
+          }
+        ],
+        "id": "CaseStudy-1"
+      }
+    },
+    {
+      "type": "Stats",
+      "props": {
+        "title": "En chiffres",
+        "items": [
+          {
+            "value": "3",
+            "title": "Chaises Louis XV",
+            "text": "Chacune captée séparément."
+          },
+          {
+            "value": "Ultra HD",
+            "title": "Niveau de détail",
+            "text": "Textures et matières visibles de près."
+          }
+        ],
+        "note": "",
+        "id": "Stats-2"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[Un outil concret pour présenter le lieu à distance.]]",
+            "author": "[[Prénom Nom, fonction, Chaises Louis XV]]"
+          }
+        ],
+        "id": "Quotes-3"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions du client",
+        "items": [
+          {
+            "q": "Le modèle remplace-t-il l’objet ?",
+            "a": "Non : il en garde une trace fidèle, il ne le protège pas physiquement."
+          },
+          {
+            "q": "[[Question du domaine à renseigner]]",
+            "a": "[[Réponse à renseigner]]"
+          }
+        ],
+        "id": "Faq-4"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-5",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-6",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}

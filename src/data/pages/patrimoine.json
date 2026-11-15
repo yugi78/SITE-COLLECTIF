@@ -1,0 +1,177 @@
+{
+  "root": {
+    "props": {
+      "title": "Patrimoine, culture, pédagogie | Numérisation 3D de monuments et musées",
+      "description": "Visites virtuelles libres de monuments, musées et sites historiques, légères et modifiables par vos équipes."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Monuments, musées, sites historiques",
+        "title": "Faites visiter ce qu’on ne peut pas toujours ouvrir.",
+        "intro": "Une visite libre et légère de votre monument ou de votre musée, pensée pour les publics lointains, les classes et les personnes qui ne peuvent pas accéder à tous les espaces.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "Voir les projets",
+        "cta2Href": "#projets",
+        "placeholder": "Démo : monument ou musée",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "ProblemSolution",
+      "props": {
+        "title": "Ce que vous nous dites, ce que nous faisons",
+        "rows": [
+          {
+            "problem": "Nous n’avons ni l’équipe ni le temps de produire cela nous-mêmes.",
+            "solution": "Une livraison clé en main, puis un back-office où vous modifiez vous-même textes et infobulles.",
+            "proof": "Château de Guermantes : première livraison en 5 jours sur 80 ha.",
+            "href": "/projets/guermantes",
+            "status": "ok"
+          },
+          {
+            "problem": "Le drone est interdit chez nous.",
+            "solution": "Une capture photographique à longue focale, avec bras articulé, pour approcher les détails sans survol.",
+            "proof": "Plafonds d’un grand monument parisien (publication en attente d’accord).",
+            "href": "",
+            "status": "attente"
+          },
+          {
+            "problem": "Une partie du site est inaccessible aux visiteurs.",
+            "solution": "Un parcours libre qui montre étages, espaces fragiles et détails, avec infobulles pédagogiques.",
+            "proof": "Château de Bècheville : 5 niveaux, 58 salles.",
+            "href": "/projets/becheville",
+            "status": "ok"
+          },
+          {
+            "problem": "Que devient ce fichier dans cinq ans ?",
+            "solution": "Un format web ouvert, des fichiers sources conservés, un hébergement de 3 ans extensible. Vous restez propriétaire.",
+            "proof": "Nos garanties",
+            "href": "/garanties",
+            "status": "ok"
+          }
+        ],
+        "id": "ProblemSolution-1"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "title": "Projets de ce secteur",
+        "lead": "",
+        "tags": [],
+        "projects": [
+          {
+            "cat": "patrimoine domaine",
+            "place": "Guermantes",
+            "name": "Château de Guermantes",
+            "text": "Parc de 80 hectares. Première livraison en 5 jours.",
+            "value": "80 hectares",
+            "placeholder": "Démo ou image : Château de Guermantes",
+            "src": "",
+            "href": "/projets/guermantes",
+            "status": "publie"
+          },
+          {
+            "cat": "patrimoine evenement",
+            "place": "Les Mureaux",
+            "name": "Château de Bècheville",
+            "text": "5 niveaux et 58 salles numérisés en 10 jours.",
+            "value": "3 000 m²",
+            "placeholder": "Démo ou image : Château de Bècheville",
+            "src": "",
+            "href": "/projets/becheville",
+            "status": "publie"
+          },
+          {
+            "cat": "patrimoine",
+            "place": "",
+            "name": "Projet en attente",
+            "text": "Emplacement réservé : plafonds d’un grand monument, publication en attente d’accord.",
+            "value": "",
+            "placeholder": "Projet en attente",
+            "src": "",
+            "href": "",
+            "status": "attente"
+          }
+        ],
+        "gains": [],
+        "id": "ProjectsRail-2"
+      }
+    },
+    {
+      "type": "Quotes",
+      "props": {
+        "title": "Ce qu’en disent nos clients",
+        "items": [
+          {
+            "text": "[[On a pu montrer les combles à nos classes sans ouvrir le chantier.]]",
+            "author": "[[Prénom Nom, responsable des publics, monument]]"
+          },
+          {
+            "text": "[[On modifie nous-mêmes les textes, sans rappeler le prestataire.]]",
+            "author": "[[Prénom Nom, chargé de médiation, musée]]"
+          }
+        ],
+        "id": "Quotes-3"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Que se passe-t-il pour les vitraux, les reflets ou les grandes hauteurs ?",
+            "a": "[[Ce sont des zones difficiles pour toutes les techniques de numérisation. Nous testons sur place et vous disons franchement ce qui sera restitué ou non.]]"
+          },
+          {
+            "q": "Peut-on l’utiliser avec des scolaires ?",
+            "a": "[[Oui : la visite s’ouvre dans un navigateur, sans installation, et des infobulles pédagogiques guident le parcours.]]"
+          },
+          {
+            "q": "Qui garde les droits sur les images ?",
+            "a": "Le client est propriétaire du modèle. [[Les autorisations de captation sont préparées avec vous avant l’intervention.]]"
+          }
+        ],
+        "id": "Faq-4"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-5",
+        "title": "Un lieu à valoriser ? Parlons de votre projet.",
+        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
+        "phone": "[[06 00 00 00 00]]",
+        "phoneHref": "tel:+33000000000",
+        "qrPlaceholder": "QR code vers cette page",
+        "qrSrc": "",
+        "accessKey": "VOTRE_CLE_WEB3FORMS",
+        "subject": "Nouvelle demande d’estimation",
+        "redirect": "",
+        "button": "Recevoir mon estimation",
+        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
+        "rdvLabel": "Réserver 30 min en visio",
+        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
+        "whatsapp": "33600000000",
+        "email": "contact@votre-domaine.fr",
+        "linkedin": "https://www.linkedin.com/in/votre-profil"
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-6",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "#contact"
+      }
+    }
+  ]
+}
