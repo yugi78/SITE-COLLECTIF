@@ -1,9 +1,0 @@
----
-import Layout from "../layouts/Layout.astro";
-import Editor from "../puck/Editor";
-// L'éditeur n'est utilisable qu'en local (npm run dev) : en production on renvoie vers l'accueil.
-if (import.meta.env.PROD) return Astro.redirect("/");
----
-<Layout title="Éditeur" noindex>
-  <Editor client:only="react" />
-</Layout>
