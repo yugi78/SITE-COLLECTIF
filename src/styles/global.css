@@ -147,9 +147,12 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   .nav .dd{position:relative}
   .nav .dd-btn{min-height:48px;padding:0 12px;background:none;border:0;color:color-mix(in srgb, var(--c-texte) 70%, var(--c-doux));font:400 .95rem var(--sans);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
   .nav .dd-btn:hover,.nav .dd-open .dd-btn{color:#fff}
+  /* chevron en V : pivote vers le haut quand le volet est ouvert */
+  .nav .dd-btn .chev{display:inline-block;flex:none;width:.4em;height:.4em;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-25%) rotate(45deg);transition:transform .35s cubic-bezier(.22,1,.36,1)}
+  .nav .dd-open .dd-btn .chev{transform:translateY(20%) rotate(-135deg)}
   .nav .dd-panel{display:none;position:absolute;top:calc(100% + 18px);left:0;min-width:360px;padding:8px;list-style:none;background:var(--frame);border:1px solid var(--line);border-radius:var(--r2);box-shadow:0 24px 50px rgba(0,0,0,.45)}
   .nav .dd-open .dd-panel{display:block;animation:unroll .45s cubic-bezier(.22,1,.36,1) both;transform-origin:top left}
-  .nav .dd-panel a{display:block;padding:12px 16px;border-radius:calc(var(--r2) - 6px)}
+  .nav nav .dd-panel a{display:block;padding:12px 16px;border-radius:calc(var(--r2) - 6px)}
   .nav .dd-panel a:hover{background:rgba(255,255,255,.07)}
   .nav .dd-panel strong{display:block;font-weight:500;color:#fff;font-size:.98rem}
   .nav .dd-panel small{color:var(--mut);font-size:.85rem}
@@ -163,21 +166,30 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   @media (max-width:1000px){
     .nav{width:calc(100% - 20px);justify-content:space-between;padding-right:9px}
     .nav .burger{display:flex}
-    .nav nav{display:none;position:fixed;inset:0;z-index:1;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:calc(var(--nh) + 56px) var(--pad) 40px;background:var(--frame);overflow-y:auto;overscroll-behavior:contain}
+    .nav nav{display:none;position:fixed;inset:0;z-index:1;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:calc(var(--nh) + 40px) var(--pad) calc(32px + env(safe-area-inset-bottom));background:var(--frame);overflow-y:auto;overscroll-behavior:contain}
     .nav nav.open{display:flex}
+    /* menu ouvert : la bulle du header passe devant le contenu qui défile (le nom du studio reste lisible) */
+    .nav:has(nav.open)::before{z-index:2;box-shadow:none}
     .nav-peek{display:none}
     .nav-links{display:block}.nl-clip{clip-path:none}.nl-row{display:block;width:auto;transform:none!important;opacity:1!important}
-    .nav nav .nl-row>a:not(.btn){padding:16px 0;border-bottom:1px solid var(--line);font:300 clamp(1.9rem,8.5vw,3.2rem)/1.1 var(--sans);letter-spacing:-.035em;color:var(--c-texte)}
-    .nav .dd-btn{width:100%;justify-content:flex-start;padding:6px 0 8px;pointer-events:none;color:var(--accent);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
-    .nav .dd-btn span{display:none}
-    .nav .dd-panel{display:block;position:static;min-width:0;margin:0 0 18px;padding:0;background:none;border:0;box-shadow:none}
+    /* un lien par ligne (sans display:flex, les liens inline se suivaient : « PortfolioGaranties ») */
+    .nav nav .nl-row>a:not(.btn),.nav .dd-btn{display:flex;width:100%;min-height:0;padding:14px 0;border-bottom:1px solid var(--line);font:300 clamp(1.7rem,7.5vw,3rem)/1.1 var(--sans);letter-spacing:-.035em;color:var(--c-texte)}
+    /* Secteurs : volet repliable, ouvert par le chevron */
+    .nav .dd-btn{justify-content:space-between;align-items:center;text-align:left}
+    .nav .dd-btn .chev{width:.42em;height:.42em;margin-right:.25em}
+    .nav .dd-panel{display:none;position:static;min-width:0;margin:0 0 6px;padding:0 0 0 2px;background:none;border:0;box-shadow:none}
     .nav nav .dd-panel a{display:block;width:100%;padding:13px 0;border-bottom:1px solid var(--line);border-radius:0}
     .nav .dd-panel a:hover{background:none}
-    .nav .dd-panel strong{font:300 1.35rem/1.2 var(--sans);letter-spacing:-.02em}
+    .nav .dd-panel strong{font:300 1.2rem/1.25 var(--sans);letter-spacing:-.02em;color:color-mix(in srgb, var(--c-texte) 82%, var(--c-doux))}
     .nav .dd-panel small{display:none}
-    .nav nav .btn{margin:28px 0 0;min-height:60px;font-size:.85rem}
+    .nav nav .btn{flex:none;margin:28px 0 0;min-height:56px;padding:0 16px;font-size:.85rem;white-space:normal;text-align:center}
   }
   html.menu-open{overflow:hidden}
+
+  /* éditeur Puck : bloc masqué (absent du site public), affiché estompé avec une étiquette */
+  .blk-hidden{position:relative;outline:2px dashed #e0a43a;outline-offset:-2px}
+  .blk-hidden>.blk{opacity:.35;filter:grayscale(.6)}
+  .blk-hidden::before{content:attr(data-label);position:absolute;top:12px;left:12px;z-index:5;padding:4px 12px;border-radius:99px;background:#e0a43a;color:#1a1200;font:600 .78rem var(--sans)}
 
   /* ---------- hero (accueil) et en-tête de page : média à gauche, tuiles d'info à droite ---------- */
   .hero{display:grid;grid-template-columns:minmax(0,calc(63% - var(--hx,0) * 11%)) minmax(0,1fr);gap:var(--gap);min-height:calc(100svh - 2 * var(--gap))}
@@ -322,6 +334,12 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   .member em{font-style:normal;color:var(--accent);font-size:.9rem;display:block;margin-bottom:.4rem}
   .member p{font-size:.95em}
   .portfolio-media-slot.avatar{width:104px;min-height:104px;flex:none;border-radius:50%;padding:8px}
+  /* fiche étroite (mobile) : la photo passe au-dessus du texte au lieu de lui voler la moitié de la largeur */
+  .members{container-type:inline-size}
+  @container (max-width:520px){
+    .member{flex-direction:column;gap:16px}
+    .member .portfolio-media-slot.avatar{width:84px;min-height:84px}
+  }
   .portfolio-media-slot.avatar::before,.portfolio-media-slot.avatar::after{content:none}
 
   /* ---------- FAQ ---------- */

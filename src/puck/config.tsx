@@ -47,11 +47,42 @@ const sizeFields: any = {
   textSize: { type: "radio", label: "Taille du texte", options: SIZE_OPTIONS },
 };
 const attr = (v?: string) => (v && v !== "m" ? v : undefined);
+// Interrupteur « Afficher sur le site » ajouté à TOUS les blocs : un bloc masqué garde son contenu
+// dans le JSON (on peut le réactiver plus tard) mais n'est pas du tout rendu sur le site public.
+const visibilityField: any = {
+  hidden: { type: "radio", label: "Afficher sur le site", options: [{ label: "Oui", value: false }, { label: "Non (masqué)", value: true }] },
+};
+// Même interrupteur sur chaque élément des listes (cartes, chiffres, étapes…) : l'élément masqué reste
+// dans le JSON, est signalé « Masqué · » dans la liste de l'éditeur et n'est rendu ni dans l'aperçu ni sur le site.
+const itemVisibilityField: any = {
+  hidden: { type: "radio", label: "Afficher cet élément", options: [{ label: "Oui", value: false }, { label: "Non (masqué)", value: true }] },
+};
 Object.values(config.components as Record<string, any>).forEach((c) => {
   const render = c.render;
-  c.fields = { ...c.fields, ...sizeFields };
-  c.defaultProps = { ...c.defaultProps, titleSize: "m", textSize: "m" };
-  c.render = (props: any) => <div className="blk" data-tt={attr(props.titleSize)} data-ts={attr(props.textSize)}>{render(props)}</div>;
+  const listKeys: string[] = [];
+  for (const [key, f] of Object.entries<any>(c.fields ?? {})) {
+    if (f?.type !== "array") continue;
+    listKeys.push(key);
+    const summary = f.getItemSummary;
+    c.fields[key] = {
+      ...f,
+      arrayFields: { ...itemVisibilityField, ...f.arrayFields },
+      getItemSummary: (item: any, i: number) => {
+        const s = summary ? summary(item, i) : `Élément ${i + 1}`;
+        return item?.hidden ? `Masqué · ${s}` : s;
+      },
+    };
+  }
+  c.fields = { ...visibilityField, ...c.fields, ...sizeFields };
+  c.defaultProps = { ...c.defaultProps, hidden: false, titleSize: "m", textSize: "m" };
+  c.render = (raw: any) => {
+    if (raw.hidden && !raw.puck?.isEditing) return <></>;
+    const props = { ...raw };
+    for (const k of listKeys) if (Array.isArray(props[k])) props[k] = props[k].filter((it: any) => !it?.hidden);
+    const blk = <div className="blk" data-tt={attr(props.titleSize)} data-ts={attr(props.textSize)}>{render(props)}</div>;
+    // Dans l'éditeur, le bloc masqué reste visible mais estompé, avec une étiquette.
+    return props.hidden ? <div className="blk-hidden" data-label="Bloc masqué : invisible sur le site">{blk}</div> : blk;
+  };
 });
 
 export default config;

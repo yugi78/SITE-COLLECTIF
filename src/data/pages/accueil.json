@@ -5,7 +5,6 @@
       "description": "Visites virtuelles libres, numérisation d’objets et valorisation 3D pour le patrimoine, les domaines, l’immobilier et l’événementiel."
     }
   },
-  "zones": {},
   "content": [
     {
       "type": "Hero",
@@ -72,23 +71,28 @@
         "items": [
           {
             "title": "Modifiez vos contenus vous-même",
-            "text": "Textes, titres, images, ordre des sections : vous changez vos pages comme dans un éditeur visuel."
+            "text": "Textes, titres, images, ordre des sections : vous changez vos pages comme dans un éditeur visuel.",
+            "hidden": true
           },
           {
             "title": "Ajoutez et déplacez vos points d’intérêt",
-            "text": "[[Placez une infobulle sur la carte 3D et rattachez-lui un texte, une photo ou un lien.]]"
+            "text": "[[Placez une infobulle sur la carte 3D et rattachez-lui un texte, une photo ou un lien.]]",
+            "hidden": true
           },
           {
             "title": "Créez des parcours animés",
-            "text": "[[Définissez des étapes : la caméra glisse d’un point à l’autre, avec l’encart d’information qui l’accompagne.]]"
+            "text": "[[Définissez des étapes : la caméra glisse d’un point à l’autre, avec l’encart d’information qui l’accompagne.]]",
+            "hidden": true
           },
           {
             "title": "Configurez l’interface",
-            "text": "[[Menu déroulant des vues, boutons, couleurs : n’activez que ce dont vous avez besoin.]]"
+            "text": "[[Menu déroulant des vues, boutons, couleurs : n’activez que ce dont vous avez besoin.]]",
+            "hidden": true
           },
           {
             "title": "Un système modulaire",
-            "text": "[[Chaque fonction est un module : nous ajoutons ce qui sert votre projet, rien de plus.]]"
+            "text": "[[Chaque fonction est un module : nous ajoutons ce qui sert votre projet, rien de plus.]]",
+            "hidden": true
           }
         ],
         "placeholder": "Démo vidéo : l’éditeur en action",
@@ -238,5 +242,6 @@
         "href": "#contact"
       }
     }
-  ]
+  ],
+  "zones": {}
 }

@@ -65,8 +65,8 @@ export function SiteNav({ site }: { site: Site }) {
     if (open) {
       lenis?.stop();
       if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
-        gsap.fromTo("#menu .nl-row > a, #menu .dd-btn, #menu .dd-panel li", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", stagger: 0.045, delay: 0.08, clearProps: "transform" });
-    } else lenis?.start();
+        gsap.fromTo("#menu .nl-row > a, #menu .dd-btn", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", stagger: 0.045, delay: 0.08, clearProps: "transform" });
+    } else { lenis?.start(); setDd(false); } // le volet Secteurs se replie à la fermeture du menu
     return () => { html.classList.remove("menu-open"); };
   }, [open]);
 
@@ -86,13 +86,13 @@ export function SiteNav({ site }: { site: Site }) {
       <button className="burger" aria-label="Menu" aria-expanded={open} aria-controls="menu" onClick={() => (open ? shut() : setOpen(true))}>
         <span /><span /><span />
       </button>
-      <nav id="menu" className={open ? "open" : ""} aria-label="Navigation principale">
+      <nav id="menu" className={open ? "open" : ""} aria-label="Navigation principale" data-lenis-prevent>
         <div className="nav-links">
           <div className="nl-clip">
             <div className="nl-row">
               {(site.sectors ?? []).length > 0 && (
                 <div className={`dd ${dd ? "dd-open" : ""}`}>
-                  <button className="dd-btn" aria-expanded={dd} onClick={() => setDd(!dd)}><Roll>{site.sectorsLabel}</Roll> <span aria-hidden="true">▾</span></button>
+                  <button className="dd-btn" aria-expanded={dd} onClick={() => setDd(!dd)}><Roll>{site.sectorsLabel}</Roll><span className="chev" aria-hidden="true" /></button>
                   <ul className="dd-panel">
                     {site.sectors.map((s) => (<li key={s.href}><a href={s.href}><strong>{s.title}</strong><small>{s.text}</small></a></li>))}
                   </ul>

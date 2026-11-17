@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PageView from "../puck/PageView";
+import { stripHidden } from "../lib/visibility";
 import data from "../data/pages/accueil.json";
 ---
 <Layout title={data.root.props.title} description={data.root.props.description}>
-  <PageView data={data as any} client:load />
+  <PageView data={stripHidden(data)} client:load />
 </Layout>

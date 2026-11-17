@@ -75,7 +75,8 @@
             "placeholder": "Rendu final dans le navigateur",
             "src": ""
           }
-        ]
+        ],
+        "hidden": true
       }
     },
     {

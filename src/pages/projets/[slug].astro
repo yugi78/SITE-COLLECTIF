@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PageView from "../../puck/PageView";
+import { stripHidden } from "../../lib/visibility";
 
 export function getStaticPaths() {
   const files = import.meta.glob("../../data/projets/*.json", { eager: true }) as Record<string, { default: any }>;
@@ -9,5 +10,5 @@ export function getStaticPaths() {
 const { data } = Astro.props;
 ---
 <Layout title={data.root?.props?.title} description={data.root?.props?.description}>
-  <PageView data={data} client:load />
+  <PageView data={stripHidden(data)} client:load />
 </Layout>
