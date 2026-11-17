@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { Roll, T } from "./blocks/shared";
+import { Roll, T, asset } from "./blocks/shared";
 
 export type Site = {
   brand: string; logo?: string; sectorsLabel: string;
@@ -77,7 +77,7 @@ export function SiteNav({ site }: { site: Site }) {
   return (
     <header className={`nav ${compact ? "is-compact" : ""} ${collapsed ? "is-collapsed" : ""}`} ref={ref} onPointerLeave={hideMenu} onPointerEnter={() => window.clearTimeout(leaveTimer.current)}>
       <a className="brand" href="/">
-        {site.logo ? <img src={site.logo} alt={site.brand.replace(/[\[\]]/g, "")} height={32} /> : <T>{site.brand}</T>}
+        {site.logo ? <img src={asset(site.logo)} alt={site.brand.replace(/[\[\]]/g, "")} height={32} /> : <T>{site.brand}</T>}
       </a>
       <button className="nav-peek" aria-label="Afficher le menu" aria-expanded={!collapsed} tabIndex={compact ? 0 : -1}
         onPointerEnter={showMenu} onFocus={showMenu} onClick={() => (peek ? setPeek(false) : showMenu())}>

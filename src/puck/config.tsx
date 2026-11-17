@@ -2,6 +2,7 @@ import { PALETTE, themeVars } from "../lib/theme";
 import type { Config } from "@measured/puck";
 import { SiteNav, SiteFooter, type Site } from "../components/SiteNav";
 import site from "../data/site.json";
+import { seoField, siteSeoFields } from "./seoFields";
 import { Hero } from "../components/blocks/Hero";
 import { Control } from "../components/blocks/Control";
 import { CtaBand } from "../components/blocks/CtaBand";
@@ -26,7 +27,7 @@ import { StickyBar } from "../components/blocks/StickyBar";
 const config: Config = {
   root: {
     fields: {
-      title: { type: "text", label: "Titre de la page (SEO)" }, description: { type: "textarea", label: "Description (SEO)" },
+      seo: seoField,
       pageTextSize: { type: "radio", label: "Taille du texte de toute la page", options: [{ label: "Petit", value: "s" }, { label: "Normal", value: "m" }, { label: "Grand", value: "l" }, { label: "Très grand", value: "xl" }] },
       pageTitleSize: { type: "radio", label: "Taille des titres de toute la page", options: [{ label: "Petit", value: "s" }, { label: "Normal", value: "m" }, { label: "Grand", value: "l" }, { label: "Très grand", value: "xl" }] },
     } as any,
@@ -116,6 +117,7 @@ export const siteConfig: Config = {
       legal: { type: "text", label: "Mentions légales : texte" }, legalHref: { type: "text", label: "Mentions légales : lien" },
       palette: { type: "object", label: "Couleurs du site (le dégradé en est composé)", objectFields: Object.fromEntries(PALETTE.map((c) => [c.key, colorField(c.label, c.def)])) },
       gradientAngle: { type: "number", label: "Angle du dégradé (degrés : 180 = de haut en bas, 90 = de gauche à droite)", min: 0, max: 360 },
+      ...siteSeoFields,
     } as any,
     render: ({ children, ...p }: any) => (
       <div className="site" style={themeVars(p) as React.CSSProperties}>

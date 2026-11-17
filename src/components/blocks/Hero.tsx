@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { ComponentConfig } from "@measured/puck";
-import {Arrow, Slot, T, mediaFields} from "./shared";
+import {Arrow, Slot, T, asset, mediaFields} from "./shared";
 
 type P = { eyebrow: string; title: string; subtitle: string; cta1Label: string; cta1Href: string; cta2Label: string; cta2Href: string; placeholder: string; src: string; poster: string; launchLabel: string };
 
@@ -10,14 +10,15 @@ function Media({ placeholder, src, poster, launchLabel }: Pick<P, "placeholder" 
   if (src && poster && !on)
     return (
       <div className="portfolio-media-slot viewer-slot filled">
-        <img src={poster} alt={placeholder} />
+        <img src={asset(poster)} alt={placeholder} />
         <div className="launch">
           <button className="btn btn-primary" onClick={() => setOn(true)}>{launchLabel}</button>
           <small>Navigation libre. Aucune installation.</small>
         </div>
       </div>
     );
-  return <Slot className="viewer-slot" placeholder={placeholder} src={src} />;
+  // Pas de démo : l'image d'aperçu s'affiche seule (sinon le placeholder).
+  return <Slot className="viewer-slot" placeholder={placeholder} src={src || poster} />;
 }
 
 export const Hero: ComponentConfig<P> = {
@@ -31,7 +32,7 @@ export const Hero: ComponentConfig<P> = {
     cta2Label: { type: "text", label: "Bouton 2 : texte" },
     cta2Href: { type: "text", label: "Bouton 2 : lien" },
     ...mediaFields,
-    poster: { type: "text", label: "Image d’aperçu (la démo se lance au clic ; vide = chargement direct)" },
+    poster: { type: "text", label: "Image d’aperçu (ex. /images/photo.jpg). Avec une démo : la démo se lance au clic. Sans démo : l’image s’affiche seule" },
     launchLabel: { type: "text", label: "Texte du bouton de lancement" },
   } as any,
   defaultProps: {

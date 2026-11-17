@@ -2,13 +2,22 @@
 import Layout from "../../layouts/Layout.astro";
 import PageView from "../../puck/PageView";
 import { stripHidden } from "../../lib/visibility";
+import { breadcrumbLd, faqLd, headingOf, resolveSeo } from "../../lib/seo";
 
 export function getStaticPaths() {
   const files = import.meta.glob("../../data/projets/*.json", { eager: true }) as Record<string, { default: any }>;
   return Object.entries(files).map(([p, m]) => ({ params: { slug: p.split("/").pop()!.replace(".json", "") }, props: { data: m.default } }));
 }
-const { data } = Astro.props;
+const data = stripHidden(Astro.props.data);
+const seo = resolveSeo(data);
+const base = Astro.site ?? Astro.url;
+// Fil d'Ariane : Accueil › Portfolio › nom du projet
+const crumbs = breadcrumbLd([
+  { name: "Accueil", path: "/" },
+  { name: "Portfolio", path: "/portfolio/" },
+  { name: headingOf(data) || seo.title, path: Astro.url.pathname },
+], base);
 ---
-<Layout title={data.root?.props?.title} description={data.root?.props?.description}>
-  <PageView data={stripHidden(data)} client:load />
+<Layout {...seo} jsonLd={[crumbs, faqLd(data)]}>
+  <PageView data={data} client:load />
 </Layout>

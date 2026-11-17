@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Patrimoine, culture, pédagogie | Numérisation 3D de monuments et musées",
-      "description": "Visites virtuelles libres de monuments, musées et sites historiques, légères et modifiables par vos équipes."
+      "seo": {
+        "title": "Patrimoine, culture, pédagogie | Numérisation 3D de monuments et musées",
+        "description": "Visites virtuelles libres de monuments, musées et sites historiques, légères et modifiables par vos équipes.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Objets et archivage 3D | Numérisation d’objets, mobilier et œuvres",
-      "description": "Modèles 3D fidèles et optimisés pour le web, pour archiver, vendre ou transmettre objets, mobilier et œuvres."
+      "seo": {
+        "title": "Objets et archivage 3D | Numérisation d’objets, mobilier et œuvres",
+        "description": "Modèles 3D fidèles et optimisés pour le web, pour archiver, vendre ou transmettre objets, mobilier et œuvres.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

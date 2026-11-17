@@ -2,8 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import PageView from "../puck/PageView";
 import { stripHidden } from "../lib/visibility";
-import data from "../data/pages/accueil.json";
+import { faqLd, resolveSeo } from "../lib/seo";
+import raw from "../data/pages/accueil.json";
+
+const data = stripHidden(raw);
+const seo = resolveSeo(data);
 ---
-<Layout title={data.root.props.title} description={data.root.props.description}>
-  <PageView data={stripHidden(data)} client:load />
+<Layout {...seo} jsonLd={[faqLd(data)]}>
+  <PageView data={data} client:load />
 </Layout>

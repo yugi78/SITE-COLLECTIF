@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Chaises Louis XV | Réalisation",
-      "description": "Trois chaises de style Louis XV, rescapées d’un incendie, captées en ultra haute définition. [[À valider avec le domaine avant publication.]]"
+      "seo": {
+        "title": "Chaises Louis XV | Réalisation",
+        "description": "Trois chaises de style Louis XV, rescapées d’un incendie, captées en ultra haute définition. [[À valider avec le domaine avant publication.]]",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

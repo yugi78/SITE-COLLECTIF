@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Événementiel, salons, showroom | Visite 3D de lieux et de stands",
-      "description": "Repérez un lieu, présentez un showroom et prolongez la visibilité d’un salon grâce à la 3D en ligne."
+      "seo": {
+        "title": "Événementiel, salons, showroom | Visite 3D de lieux et de stands",
+        "description": "Repérez un lieu, présentez un showroom et prolongez la visibilité d’un salon grâce à la 3D en ligne.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

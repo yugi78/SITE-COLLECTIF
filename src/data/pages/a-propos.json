@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "À propos | Hugo Menendez et Thierry Ramel (Abacab Drone Service)",
-      "description": "Un artiste 3D et un télépilote de drone DGAC : deux métiers complémentaires pour numériser, modéliser et valoriser vos lieux."
+      "seo": {
+        "title": "À propos | Le collectif : Hugo Menendez, Thierry Ramel et leur réseau d’experts",
+        "description": "Deux fondateurs, un artiste 3D et un télépilote de drone DGAC, entourés d’un réseau d’experts partout en France : télépilotes, directeurs artistiques et développeurs spécialisés.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "content": [
@@ -11,13 +16,13 @@
       "props": {
         "id": "PageHeader-0",
         "eyebrow": "Le collectif",
-        "title": "Deux entrepreneurs, un seul interlocuteur.",
-        "intro": "Nous sommes un collectif d’entrepreneurs : Hugo Menendez et Thierry Ramel dirigent chacun leur activité et s’associent sur vos projets de numérisation et de valorisation 3D. Deux savoir-faire complémentaires, une seule équipe sur le terrain.",
+        "title": "Deux fondateurs, un réseau d’experts, un seul interlocuteur.",
+        "intro": "Nous sommes un collectif d’entrepreneurs. Hugo Menendez et Thierry Ramel portent chaque projet et restent vos interlocuteurs ; selon le lieu et l’ambition, ils s’entourent d’experts de la captation par drone partout en France, de directeurs artistiques et de développeurs spécialisés.",
         "cta1Label": "Estimer un projet",
         "cta1Href": "/contact",
         "cta2Label": "Voir nos réalisations",
         "cta2Href": "/portfolio",
-        "placeholder": "Photo du collectif sur le terrain (ou portrait des deux)",
+        "placeholder": "Photo du collectif sur le terrain",
         "src": ""
       }
     },
@@ -25,8 +30,8 @@
       "type": "About",
       "props": {
         "id": "About-1",
-        "title": "Un collectif, deux entreprises.",
-        "text": "Chacun reste entrepreneur de son métier et responsable de ses livrables ; nous nous associons projet par projet pour couvrir toute la chaîne, de la captation au site publié.",
+        "title": "Deux fondateurs, un réseau d’experts.",
+        "text": "Hugo et Thierry pilotent chaque projet de bout en bout. Quand le lieu est éloigné ou que le projet demande des compétences supplémentaires, ils mobilisent les experts indépendants du collectif.",
         "members": [
           {
             "name": "Hugo Menendez",
@@ -43,9 +48,25 @@
             "src": ""
           }
         ],
-        "principle": "Deux entreprises indépendantes, une façon de travailler commune : nous nous associons sur chaque captation et répartissons l’effort selon nos spécialités.",
-        "badges": "Collectif d’entrepreneurs,Télépilote DGAC,Photogrammétrie,CGI et modélisation 3D,3D temps réel pour le web,[[Chaque entreprise est assurée à titre professionnel]]",
-        "coverage": "[[Zone d’intervention : Île-de-France et déplacements sur devis dans toute la France]]"
+        "networkTitle": "Le réseau du collectif",
+        "networkText": "Des professionnels indépendants avec qui nous travaillons, réunis selon les besoins de chaque projet.",
+        "network": [
+          {
+            "title": "Télépilotes de drone partout en France",
+            "text": "Des experts de la captation par drone, mobilisés au plus près de votre site."
+          },
+          {
+            "title": "Directeurs artistiques",
+            "text": "Pour l’identité visuelle, la mise en scène et la cohérence de l’expérience."
+          },
+          {
+            "title": "Développeurs spécialisés",
+            "text": "Pour les intégrations sur mesure, les interfaces et les fonctionnalités avancées."
+          }
+        ],
+        "principle": "Des entrepreneurs indépendants, une façon de travailler commune : les fondateurs restent vos interlocuteurs et réunissent, pour chaque projet, l’équipe adaptée à votre lieu.",
+        "badges": "Collectif d’entrepreneurs,Réseau de télépilotes en France,Télépilote DGAC,Photogrammétrie,CGI et modélisation 3D,3D temps réel pour le web,[[Chaque entreprise est assurée à titre professionnel]]",
+        "coverage": "Zone d’intervention : toute la France, grâce au réseau de télépilotes du collectif."
       }
     },
     {

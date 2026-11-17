@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Château de Guermantes | Réalisation",
-      "description": "Le parc et ses abords numérisés pour se visiter, se préparer et se présenter à distance."
+      "seo": {
+        "title": "Château de Guermantes | Réalisation",
+        "description": "Le parc et ses abords numérisés pour se visiter, se préparer et se présenter à distance.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

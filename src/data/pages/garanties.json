@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Garanties et méthode | Propriété, hébergement, sources conservées",
-      "description": "Vous restez propriétaire du modèle, hébergement de 3 ans extensible, fichiers sources conservés, format web ouvert."
+      "seo": {
+        "title": "Garanties et méthode | Propriété, hébergement, sources conservées",
+        "description": "Vous restez propriétaire du modèle, hébergement de 3 ans extensible, fichiers sources conservés, format web ouvert.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},
@@ -70,7 +75,7 @@
         "steps": [
           {
             "title": "1. Capture terrain",
-            "text": "Un binôme sur place : opérateur 3D et télépilote certifié.",
+            "text": "Une équipe sur place : opérateur 3D et télépilote certifié, issu de notre réseau partout en France.",
             "chips": "Drone, DSLR, Scanner 3D, Studio light",
             "placeholder": "Photo de terrain",
             "src": ""

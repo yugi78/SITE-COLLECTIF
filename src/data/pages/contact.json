@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Contact et tarifs | Estimer un projet de numérisation 3D",
-      "description": "Repères de tarifs et formulaire pour estimer votre projet de visite 3D, de numérisation ou d’archivage."
+      "seo": {
+        "title": "Contact et tarifs | Estimer un projet de numérisation 3D",
+        "description": "Repères de tarifs et formulaire pour estimer votre projet de visite 3D, de numérisation ou d’archivage.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},
@@ -17,7 +22,7 @@
         "cta1Href": "",
         "cta2Label": "",
         "cta2Href": "",
-        "placeholder": "Visuel ou photo du binôme",
+        "placeholder": "Visuel ou photo du collectif",
         "src": "",
         "id": "PageHeader-0"
       }

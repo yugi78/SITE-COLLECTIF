@@ -4,7 +4,7 @@ if (import.meta.env.PROD) return Astro.redirect("/");
 const files = Object.keys(import.meta.glob("../../data/**/*.json"));
 const paths = files.map((f) => f.replace("../../data/", "").replace(".json", "")).sort();
 ---
-<Layout title="Éditeur" noindex>
+<Layout title="Éditeur" editor>
   <main style="max-width:640px;margin:48px auto;font-family:system-ui;padding:0 20px">
     <h1>Choisir une page à modifier</h1>
     <ul style="line-height:2">

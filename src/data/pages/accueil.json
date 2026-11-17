@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Studio de numérisation spatiale & valorisation 3D",
-      "description": "Visites virtuelles libres, numérisation d’objets et valorisation 3D pour le patrimoine, les domaines, l’immobilier et l’événementiel."
+      "seo": {
+        "title": "Studio de numérisation spatiale & valorisation 3D",
+        "description": "Visites virtuelles libres, numérisation d’objets et valorisation 3D pour le patrimoine, les domaines, l’immobilier et l’événementiel.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "content": [
@@ -10,7 +15,7 @@
       "type": "Hero",
       "props": {
         "id": "Hero-0",
-        "eyebrow": "Studio de numérisation spatiale & valorisation 3D",
+        "eyebrow": "Collectif d'expert en numérisation spatiale & valorisation 3D",
         "title": "Donnez à vos lieux d’exception une empreinte numérique vivante.",
         "subtitle": "Photo, drone et 3D temps réel, réunis dans une seule visite à parcourir librement.",
         "cta1Label": "Explorer une démo en direct",
@@ -19,7 +24,7 @@
         "cta2Href": "#contact",
         "placeholder": "Insérer la meilleure démo 3D / WebGL ici (plein écran, chargement rapide)",
         "src": "",
-        "poster": "",
+        "poster": "images/pantheon.png",
         "launchLabel": "Lancer l’expérience"
       }
     },

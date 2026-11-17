@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Portfolio | Réalisations de numérisation 3D",
-      "description": "Châteaux, domaines, mobilier : les réalisations du studio, à parcourir par univers."
+      "seo": {
+        "title": "Portfolio | Réalisations de numérisation 3D",
+        "description": "Châteaux, domaines, mobilier : les réalisations du studio, à parcourir par univers.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

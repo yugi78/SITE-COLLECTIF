@@ -2,20 +2,58 @@
 import "../styles/global.css";
 import site from "../data/site.json";
 import { themeStyleString } from "../lib/theme";
-const { title, description, noindex = false } = Astro.props;
-const t = title || "Studio de numérisation spatiale & valorisation 3D";
+import { absolute, clean, globals, orgLd } from "../lib/seo";
+
+interface Props {
+  title?: string; description?: string; image?: string; imageAlt?: string;
+  noindex?: boolean;          // page publique exclue des moteurs (meta robots + absente du sitemap)
+  editor?: boolean;           // éditeur Puck : aucune balise SEO, noindex, pas d'animations
+  jsonLd?: (object | null)[]; // données structurées propres à la page (fil d'Ariane, FAQ…)
+}
+const { title, description, image, imageAlt, noindex = false, editor = false, jsonLd = [] } = Astro.props;
+const g = globals();
+const t = clean(title) || g.name;
+const desc = clean(description) || g.description;
+const base = Astro.site ?? Astro.url;
+const canonical = new URL(Astro.url.pathname, base).href;
+const img = absolute(clean(image) || g.image, base);
+const imgAlt = clean(image) ? clean(imageAlt) : g.imageAlt;
+const locale = g.lang.includes("-") ? g.lang.replace("-", "_") : `${g.lang}_${g.lang.toUpperCase()}`;
+const ld = editor ? [] : [orgLd(base), ...jsonLd].filter(Boolean);
+const json = (o: unknown) => JSON.stringify(o).replace(/</g, "\\u003c");
 // Animations (chargement, transitions, scroll) uniquement sur le site public, jamais dans l'éditeur Puck.
-const motion = !noindex;
+const motion = !editor;
 const brand = (site.root.props.brand || "").replace(/\[\[|\]\]/g, "");
 ---
 <!doctype html>
-<html lang="fr" style={themeStyleString(site.root.props)}>
+<html lang={g.lang} style={themeStyleString(site.root.props)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {noindex && <meta name="robots" content="noindex" />}
     <title>{t}</title>
-    {description && <meta name="description" content={description} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content={g.themeColor} />
+    {(editor || noindex) && <meta name="robots" content="noindex" />}
+    {!editor && (
+      <>
+        {desc && <meta name="description" content={desc} />}
+        {!noindex && <link rel="canonical" href={canonical} />}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={g.name} />
+        <meta property="og:locale" content={locale} />
+        <meta property="og:title" content={t} />
+        {desc && <meta property="og:description" content={desc} />}
+        <meta property="og:url" content={canonical} />
+        {img && <meta property="og:image" content={img} />}
+        {img && imgAlt && <meta property="og:image:alt" content={imgAlt} />}
+        <meta name="twitter:card" content={img ? "summary_large_image" : "summary"} />
+        <meta name="twitter:title" content={t} />
+        {desc && <meta name="twitter:description" content={desc} />}
+        {img && <meta name="twitter:image" content={img} />}
+        {img && imgAlt && <meta name="twitter:image:alt" content={imgAlt} />}
+        {ld.map((o) => <script type="application/ld+json" set:html={json(o)} />)}
+      </>
+    )}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />

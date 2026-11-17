@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Château de Bècheville | Réalisation",
-      "description": "Un château de 5 niveaux et 58 salles numérisé pour le parcourir librement."
+      "seo": {
+        "title": "Château de Bècheville | Réalisation",
+        "description": "Un château de 5 niveaux et 58 salles numérisé pour le parcourir librement.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

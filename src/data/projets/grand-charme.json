@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Domaine du Grand Charme | Réalisation",
-      "description": "Un domaine capté par drone en une demi-journée, présenté dans une application WebGL."
+      "seo": {
+        "title": "Domaine du Grand Charme | Réalisation",
+        "description": "Un domaine capté par drone en une demi-journée, présenté dans une application WebGL.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

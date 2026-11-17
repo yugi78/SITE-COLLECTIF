@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Domaines et lieux de réception | Visite 3D de châteaux et parcs",
-      "description": "Faites visiter votre domaine, ses extérieurs et ses ambiances depuis un lien, avant même la première visite."
+      "seo": {
+        "title": "Domaines et lieux de réception | Visite 3D de châteaux et parcs",
+        "description": "Faites visiter votre domaine, ses extérieurs et ses ambiances depuis un lien, avant même la première visite.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

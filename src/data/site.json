@@ -1,7 +1,7 @@
 {
   "root": {
     "props": {
-      "brand": "[[Nom du studio]]",
+      "brand": "[[Immersive & Lab]]",
       "logo": "",
       "sectorsLabel": "Secteurs",
       "sectors": [
@@ -80,7 +80,23 @@
         "accent-clair": "#2c6a85",
         "accent-sombre": "#b7d9e6"
       },
-      "gradientAngle": 158
+      "gradientAngle": 158,
+      "seoDescription": "[[Collectif d’experts en numérisation spatiale et valorisation 3D : visites 3D, captation par drone et expériences web temps réel, partout en France.]]",
+      "seoImage": "",
+      "seoImageAlt": "",
+      "lang": "fr",
+      "org": {
+        "name": "",
+        "type": "ProfessionalService",
+        "url": "https://immersive.nlab.fr",
+        "logo": "",
+        "email": "",
+        "phone": "",
+        "areaServed": "France",
+        "sameAs": []
+      },
+      "robotsExtra": "",
+      "redirects": []
     }
   },
   "content": [],

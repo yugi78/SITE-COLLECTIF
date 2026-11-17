@@ -1,0 +1,21 @@
+---
+// Page introuvable : GitHub Pages sert dist/404.html pour toute adresse inconnue.
+import Layout from "../layouts/Layout.astro";
+import { SiteNav, SiteFooter, type Site } from "../components/SiteNav";
+import site from "../data/site.json";
+const s = site.root.props as unknown as Site;
+---
+<Layout title="Page introuvable" description="Cette page n’existe pas ou a été déplacée." noindex>
+  <div class="site">
+    <SiteNav site={s} client:load />
+    <section class="tp dark">
+      <div class="wrap">
+        <span class="eyebrow">Erreur 404</span>
+        <h1>Cette page est introuvable.</h1>
+        <p class="lead">Elle a peut-être été déplacée ou supprimée. Repartez de l’accueil pour retrouver nos réalisations.</p>
+        <div class="cta"><a class="btn btn-primary" href="/">Retour à l’accueil</a></div>
+      </div>
+    </section>
+    <SiteFooter site={s} />
+  </div>
+</Layout>

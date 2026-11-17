@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PageView from "../puck/PageView";
 import { stripHidden } from "../lib/visibility";
+import { faqLd, resolveSeo } from "../lib/seo";
 
 export function getStaticPaths() {
   const files = import.meta.glob("../data/pages/*.json", { eager: true }) as Record<string, { default: any }>;
@@ -9,8 +10,9 @@ export function getStaticPaths() {
     .map(([p, m]) => ({ params: { slug: p.split("/").pop()!.replace(".json", "") }, props: { data: m.default } }))
     .filter((x) => x.params.slug !== "accueil");
 }
-const { data } = Astro.props;
+const data = stripHidden(Astro.props.data);
+const seo = resolveSeo(data);
 ---
-<Layout title={data.root?.props?.title} description={data.root?.props?.description}>
-  <PageView data={stripHidden(data)} client:load />
+<Layout {...seo} jsonLd={[faqLd(data)]}>
+  <PageView data={data} client:load />
 </Layout>

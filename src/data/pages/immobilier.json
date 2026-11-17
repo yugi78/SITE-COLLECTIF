@@ -1,8 +1,13 @@
 {
   "root": {
     "props": {
-      "title": "Immobilier, architecture, chantier | Visite 3D et suivi de chantier",
-      "description": "Une 3D fidèle du site et du projet pour mieux se projeter, filtrer les acquéreurs et montrer l’avancement d’un chantier."
+      "seo": {
+        "title": "Immobilier, architecture, chantier | Visite 3D et suivi de chantier",
+        "description": "Une 3D fidèle du site et du projet pour mieux se projeter, filtrer les acquéreurs et montrer l’avancement d’un chantier.",
+        "image": "",
+        "imageAlt": "",
+        "noindex": false
+      }
     }
   },
   "zones": {},

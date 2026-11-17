@@ -9,6 +9,6 @@ export function getStaticPaths() {
 if (import.meta.env.PROD) return Astro.redirect("/");
 const { path } = Astro.params;
 ---
-<Layout title="Éditeur" noindex>
+<Layout title="Éditeur" editor>
   <Editor path={path as string} client:only="react" />
 </Layout>

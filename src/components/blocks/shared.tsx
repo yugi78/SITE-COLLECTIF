@@ -1,5 +1,13 @@
 const IMG = /\.(png|jpe?g|webp|avif|gif|svg)(\?.*)?$/i;
 
+/** Chemin d'un fichier de public/ : « images/x.png » ou « public/images/x.png » deviennent « /images/x.png »
+ *  (sans slash initial, le chemin serait résolu depuis la page courante, ex. /edit/pages/images/x.png). */
+export const asset = (u?: string) => {
+  const s = (u ?? "").trim().replace(/\\/g, "/");
+  if (!s || /^([a-z][a-z0-9+.-]*:|\/\/|\/|#)/i.test(s)) return s;
+  return "/" + s.replace(/^(\.\/)?(public\/)?/, "");
+};
+
 /** Texte avec [[passages inventés]] surlignés en pointillé doré, à remplacer par vos vraies infos. */
 export const T = ({ children }: { children?: string }) => (
   <>
@@ -20,7 +28,9 @@ export const Arrow = ({ dir = "right" }: { dir?: "right" | "down" }) => (
 );
 
 /** Conteneur média : placeholder pointillé, ou image / iframe interactive si une URL est renseignée. */
-export const Slot = ({ placeholder, src, className = "" }: { placeholder?: string; src?: string; className?: string }) => (
+export const Slot = ({ placeholder, src: raw, className = "" }: { placeholder?: string; src?: string; className?: string }) => {
+  const src = asset(raw);
+  return (
   <div className={`portfolio-media-slot ${src ? "filled" : ""} ${className}`} data-placeholder={placeholder}>
     {src &&
       (IMG.test(src) ? (
@@ -29,7 +39,8 @@ export const Slot = ({ placeholder, src, className = "" }: { placeholder?: strin
         <iframe className="interactive-preview-slot" src={src} title={placeholder ?? "Démo interactive"} loading="lazy" allowFullScreen />
       ))}
   </div>
-);
+  );
+};
 
 export const mediaFields = {
   placeholder: { type: "text", label: "Texte du placeholder" },
