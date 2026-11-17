@@ -17,7 +17,7 @@ export const About: ComponentConfig<P> = {
   } as any,
   defaultProps: { title: "Qui sommes-nous ?", text: "", principle: "", members: [], badges: "", coverage: "" },
   render: (p) => (
-    <section id="equipe" className="bg2">
+    <section id="equipe" className="dark">
       <div className="wrap">
         <h2>{p.title}</h2>
         <p className="lead"><T>{p.text}</T></p>

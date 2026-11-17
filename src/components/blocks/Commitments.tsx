@@ -1,5 +1,5 @@
 import type { ComponentConfig } from "@measured/puck";
-import { T } from "./shared";
+import {T} from "./shared";
 
 type P = { title: string; lead: string; items: { title: string; text: string }[]; linkLabel: string; linkHref: string };
 
@@ -12,7 +12,7 @@ export const Commitments: ComponentConfig<P> = {
   } as any,
   defaultProps: { title: "Nos engagements", lead: "", items: [], linkLabel: "", linkHref: "" },
   render: ({ title, lead, items, linkLabel, linkHref }) => (
-    <section className="bg2">
+    <section className="dark">
       <div className="wrap">
         <h2>{title}</h2>
         {lead && <p className="lead"><T>{lead}</T></p>}

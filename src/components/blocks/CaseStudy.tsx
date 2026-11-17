@@ -28,7 +28,7 @@ export const CaseStudy: ComponentConfig<P> = {
     context: "", approach: "", delay: "", features: [], moments: [],
   },
   render: (p) => (
-    <section className="bg2" id="etude-de-cas">
+    <section className="dark" id="etude-de-cas">
       <div className="wrap">
         <span className="eyebrow">{p.eyebrow}</span>
         <h2><T>{p.title}</T></h2>

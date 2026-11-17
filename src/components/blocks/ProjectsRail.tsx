@@ -1,14 +1,22 @@
 import { useRef, useState } from "react";
 import type { ComponentConfig } from "@measured/puck";
-import { Slot, T, mediaFields } from "./shared";
+import { Arrow, Slot, T, mediaFields } from "./shared";
 
 type Proj = { cat: string; place: string; name: string; text: string; value: string; placeholder: string; src: string; href: string; status: "publie" | "attente" };
-type P = { title: string; lead: string; tags: { label: string; key: string }[]; projects: Proj[]; gains: { title: string; text: string }[] };
+type P = { title: string; lead: string; tags: { label: string; key: string }[]; projects: Proj[]; gains: { title: string; text: string }[]; layout?: "rail" | "grille" };
 
-function View({ title, lead, tags, projects, gains }: P) {
+function View({ title, lead, tags, projects, gains, layout }: P) {
+  const grid = layout === "grille";
   const [f, setF] = useState("all");
   const rail = useRef<HTMLDivElement>(null);
-  const pick = (k: string) => { setF(k); rail.current?.scrollTo({ left: 0 }); };
+  const [fading, setFading] = useState(false);
+  const [swapped, setSwapped] = useState(false);
+  // Changement de filtre : fondu sortant, puis les nouvelles cartes arrivent en cascade.
+  const pick = (k: string) => {
+    if (k === f) return;
+    setFading(true);
+    setTimeout(() => { setF(k); setSwapped(true); rail.current?.scrollTo({ left: 0 }); setFading(false); }, 220);
+  };
   const hasTags = (tags ?? []).length > 0;
   return (
     <section id="projets">
@@ -23,25 +31,25 @@ function View({ title, lead, tags, projects, gains }: P) {
           </div>
         )}
       </div>
-      <div className="rail" tabIndex={0} aria-label="Projets" ref={rail}>
+      <div className={grid ? "wrap" : undefined}><div className={`rail ${grid ? "grid" : ""} ${fading ? "fading" : ""} ${swapped ? "swapped" : ""}`} tabIndex={0} aria-label="Projets" ref={rail}>
         {(projects ?? []).filter((p) => f === "all" || (p.cat ?? "").split(" ").includes(f)).map((p, i) => {
           const pending = p.status === "attente";
           const link = p.href && !pending;
           return (
-            <article className={`proj ${pending ? "pending" : ""}`} key={i}>
+            <article className={`proj ${pending ? "pending" : ""}`} key={`${f}-${i}`} style={{ ["--i" as any]: i }}>
               <Slot className="r43" placeholder={p.placeholder} src={p.src} />
+              {p.place && <span className="notch">{p.place}<i className="na" aria-hidden="true">→</i></span>}
               <div className="pb">
                 {pending && <span className="badge">Projet en attente</span>}
-                <em>{p.place}</em>
                 <h3>{link ? <a href={p.href}>{p.name}</a> : p.name}</h3>
                 <p><T>{p.text}</T></p>
                 {p.value && <b>{p.value}</b>}
-                {link && <a className="more" href={p.href}>Voir le projet →</a>}
+                {link && <a className="more" href={p.href}>Voir le projet<Arrow /></a>}
               </div>
             </article>
           );
         })}
-      </div>
+      </div></div>
       <div className="wrap">
         <div className="gains">{(gains ?? []).map((g, i) => (<div key={i}><h3>{g.title}</h3><p>{g.text}</p></div>))}</div>
       </div>
@@ -68,6 +76,7 @@ export const ProjectsRail: ComponentConfig<P> = {
       },
       getItemSummary: (i: any) => i.name,
     },
+    layout: { type: "radio", label: "Affichage", options: [{ label: "Défilement horizontal", value: "rail" }, { label: "Grille", value: "grille" }] },
     gains: { type: "array", label: "Bénéfices (optionnel)", arrayFields: { title: { type: "text" }, text: { type: "textarea" } }, getItemSummary: (i: any) => i.title },
   } as any,
   defaultProps: { title: "Réalisations", lead: "", tags: [], projects: [], gains: [] },

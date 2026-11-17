@@ -9,7 +9,7 @@ const savePuckData = () => ({
   configureServer(server) {
     server.middlewares.use("/__save", (req, res) => {
       const file = new URL(req.url, "http://x").searchParams.get("file") || "";
-      if (req.method !== "POST" || !/^(pages|projets)\/[a-z0-9-]+$/.test(file)) { res.statusCode = 400; return res.end(); }
+      if (req.method !== "POST" || !/^((pages|projets)\/[a-z0-9-]+|site)$/.test(file)) { res.statusCode = 400; return res.end(); }
       let body = "";
       req.on("data", (c) => (body += c));
       req.on("end", () => {

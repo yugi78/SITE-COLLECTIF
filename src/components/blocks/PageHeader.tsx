@@ -1,5 +1,5 @@
 import type { ComponentConfig } from "@measured/puck";
-import { Slot, T, mediaFields } from "./shared";
+import {Arrow, Slot, T, mediaFields} from "./shared";
 
 type P = { eyebrow: string; title: string; intro: string; cta1Label: string; cta1Href: string; cta2Label: string; cta2Href: string; placeholder: string; src: string };
 
@@ -13,19 +13,23 @@ export const PageHeader: ComponentConfig<P> = {
   } as any,
   defaultProps: { eyebrow: "", title: "Titre de la page", intro: "", cta1Label: "Estimer un projet", cta1Href: "/contact", cta2Label: "", cta2Href: "", placeholder: "Insérer la démo ou l’image principale", src: "" },
   render: (p) => (
-    <section className="ph">
-      <div className="wrap ph-grid">
-        <div>
-          {p.eyebrow && <span className="eyebrow">{p.eyebrow}</span>}
-          <h1><T>{p.title}</T></h1>
-          <p className="lead"><T>{p.intro}</T></p>
-          <div className="cta">
-            {p.cta1Label && <a className="btn btn-primary" href={p.cta1Href}>{p.cta1Label}</a>}
-            {p.cta2Label && <a className="btn btn-ghost" href={p.cta2Href}>{p.cta2Label}</a>}
+    <header className="hero hero-page">
+      <div className="hero-media"><Slot placeholder={p.placeholder} src={p.src} /></div>
+      <div className="hero-side">
+        <div className="tile dark hero-card">
+          {p.eyebrow && <span className="chip">{p.eyebrow}</span>}
+          <div>
+            <h1><T>{p.title}</T></h1>
+            {p.intro && <p><T>{p.intro}</T></p>}
           </div>
         </div>
-        <Slot className="r43" placeholder={p.placeholder} src={p.src} />
+        {(p.cta1Label || p.cta2Label) && (
+          <div className="hero-links">
+            {p.cta2Label && <a className="row" href={p.cta2Href}><span>{p.cta2Label}</span><Arrow dir="down" /></a>}
+            {p.cta1Label && <a className="row primary" href={p.cta1Href}><span>{p.cta1Label}</span><Arrow /></a>}
+          </div>
+        )}
       </div>
-    </section>
+    </header>
   ),
 };

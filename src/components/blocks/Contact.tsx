@@ -1,5 +1,5 @@
 import type { ComponentConfig } from "@measured/puck";
-import { Slot, T } from "./shared";
+import {Slot, T} from "./shared";
 
 type P = {
   title: string; text: string; pilot: string;
@@ -30,7 +30,7 @@ export const Contact: ComponentConfig<P> = {
     accessKey: "VOTRE_CLE_WEB3FORMS", subject: "Nouvelle demande d’estimation", redirect: "", button: "Recevoir mon estimation",
   },
   render: (p) => (
-    <section id="contact" className="bg2">
+    <section id="contact" className="dark">
       <div className="wrap contact">
         <div>
           <h2>{p.title}</h2>

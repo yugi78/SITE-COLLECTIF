@@ -1,10 +1,15 @@
 ---
 import "../styles/global.css";
+import site from "../data/site.json";
+import { themeStyleString } from "../lib/theme";
 const { title, description, noindex = false } = Astro.props;
 const t = title || "Studio de numérisation spatiale & valorisation 3D";
+// Animations (chargement, transitions, scroll) uniquement sur le site public, jamais dans l'éditeur Puck.
+const motion = !noindex;
+const brand = (site.root.props.brand || "").replace(/\[\[|\]\]/g, "");
 ---
 <!doctype html>
-<html lang="fr">
+<html lang="fr" style={themeStyleString(site.root.props)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,9 +18,34 @@ const t = title || "Studio de numérisation spatiale & valorisation 3D";
     {description && <meta name="description" content={description} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    {motion && (
+      <script is:inline>
+        // Posé avant le premier rendu : écran de chargement à la 1re visite, voile de transition ensuite.
+        (function () {
+          var d = document.documentElement, s = null;
+          try { s = window.sessionStorage; } catch (e) {}
+          var forced = /[?&]intro\b/.test(location.search);
+          var seen = s && s.getItem("intro-done");
+          if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            if (forced || !seen) d.classList.add("has-loader");
+            else if (s && s.getItem("pt")) d.classList.add("pt-in");
+          }
+        })();
+      </script>
+    )}
   </head>
   <body>
+    {motion && (
+      <>
+        <div id="loader" aria-hidden="true">
+          <div class="ld-name"><span class="ld-base">{brand}</span><span class="ld-fill">{brand}</span></div>
+          <div class="ld-pct">0%</div>
+        </div>
+        <div id="pt" aria-hidden="true"></div>
+      </>
+    )}
     <slot />
+    {motion && <script>import "../scripts/motion";</script>}
   </body>
 </html>

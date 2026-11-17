@@ -1,0 +1,88 @@
+{
+  "root": {
+    "props": {
+      "brand": "[[Nom du studio]]",
+      "logo": "",
+      "sectorsLabel": "Secteurs",
+      "sectors": [
+        {
+          "title": "Patrimoine, culture, pédagogie",
+          "text": "Monuments, musées, visites à distance",
+          "href": "/patrimoine"
+        },
+        {
+          "title": "Domaines et lieux de réception",
+          "text": "Parcs, châteaux, mariages, séminaires",
+          "href": "/domaines"
+        },
+        {
+          "title": "Immobilier, architecture, chantier",
+          "text": "Prévisualiser, valoriser, suivre",
+          "href": "/immobilier"
+        },
+        {
+          "title": "Événementiel, salons, sport",
+          "text": "Repérer, présenter, prolonger",
+          "href": "/evenementiel"
+        },
+        {
+          "title": "Objets et archivage 3D",
+          "text": "Pièces d’art, mobilier, produits",
+          "href": "/objets"
+        }
+      ],
+      "links": [
+        {
+          "label": "Portfolio",
+          "href": "/portfolio"
+        },
+        {
+          "label": "Garanties",
+          "href": "/garanties"
+        },
+        {
+          "label": "À propos",
+          "href": "/a-propos"
+        }
+      ],
+      "ctaLabel": "Estimer un projet",
+      "ctaHref": "/contact",
+      "footerTagline": "Studio de numérisation spatiale & valorisation 3D",
+      "footerLinks": [
+        {
+          "label": "Portfolio",
+          "href": "/portfolio"
+        },
+        {
+          "label": "Méthode et garanties",
+          "href": "/garanties"
+        },
+        {
+          "label": "À propos",
+          "href": "/a-propos"
+        },
+        {
+          "label": "Contact et tarifs",
+          "href": "/contact"
+        }
+      ],
+      "legal": "[[Mentions légales (à venir)]]",
+      "legalHref": "",
+      "palette": {
+        "cadre": "#000000",
+        "sombre": "#1b2a31",
+        "profond": "#010609",
+        "moyen": "#1a6284",
+        "doux": "#9dc1d2",
+        "clair": "#d8e4e9",
+        "encre": "#0c2230",
+        "texte": "#f0fbff",
+        "accent-clair": "#2c6a85",
+        "accent-sombre": "#b7d9e6"
+      },
+      "gradientAngle": 158
+    }
+  },
+  "content": [],
+  "zones": {}
+}

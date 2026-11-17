@@ -93,7 +93,7 @@
         "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
         "phone": "[[06 00 00 00 00]]",
         "phoneHref": "tel:+33000000000",
-        "qrPlaceholder": "QR code vers cette page",
+        "qrPlaceholder": "",
         "qrSrc": "",
         "accessKey": "VOTRE_CLE_WEB3FORMS",
         "subject": "Nouvelle demande d’estimation",

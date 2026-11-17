@@ -1,0 +1,104 @@
+{
+  "root": {
+    "props": {
+      "title": "À propos | Hugo Menendez et Thierry Ramel (Abacab Drone Service)",
+      "description": "Un artiste 3D et un télépilote de drone DGAC : deux métiers complémentaires pour numériser, modéliser et valoriser vos lieux."
+    }
+  },
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "id": "PageHeader-0",
+        "eyebrow": "Le collectif",
+        "title": "Deux entrepreneurs, un seul interlocuteur.",
+        "intro": "Nous sommes un collectif d’entrepreneurs : Hugo Menendez et Thierry Ramel dirigent chacun leur activité et s’associent sur vos projets de numérisation et de valorisation 3D. Deux savoir-faire complémentaires, une seule équipe sur le terrain.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "Voir nos réalisations",
+        "cta2Href": "/portfolio",
+        "placeholder": "Photo du collectif sur le terrain (ou portrait des deux)",
+        "src": ""
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "id": "About-1",
+        "title": "Un collectif, deux entreprises.",
+        "text": "Chacun reste entrepreneur de son métier et responsable de ses livrables ; nous nous associons projet par projet pour couvrir toute la chaîne, de la captation au site publié.",
+        "members": [
+          {
+            "name": "Hugo Menendez",
+            "role": "Entrepreneur · Artiste 3D généraliste",
+            "text": "Indépendant, spécialisé dans la modélisation 3D et la CGI. Hugo s’est rendu expert en photogrammétrie et s’intéresse particulièrement aux technologies d’immersion 3D temps réel pour le web : il traite les captations, optimise les modèles et conçoit l’expérience que vos visiteurs parcourent dans leur navigateur.",
+            "placeholder": "Portrait de Hugo",
+            "src": ""
+          },
+          {
+            "name": "Thierry Ramel",
+            "role": "Fondateur d’Abacab Drone Service · Télépilote de drone DGAC",
+            "text": "Entrepreneur et télépilote de drone déclaré auprès de la DGAC, Thierry a fondé Abacab Drone Service. Il réalise la captation 3D et les prises de vue aériennes, et conçoit des maquettes virtuelles 3D de domaines et de châteaux à partir de ses relevés par drone.",
+            "placeholder": "Portrait de Thierry",
+            "src": ""
+          }
+        ],
+        "principle": "Deux entreprises indépendantes, une façon de travailler commune : nous nous associons sur chaque captation et répartissons l’effort selon nos spécialités.",
+        "badges": "Collectif d’entrepreneurs,Télépilote DGAC,Photogrammétrie,CGI et modélisation 3D,3D temps réel pour le web,[[Chaque entreprise est assurée à titre professionnel]]",
+        "coverage": "[[Zone d’intervention : Île-de-France et déplacements sur devis dans toute la France]]"
+      }
+    },
+    {
+      "type": "Method",
+      "props": {
+        "id": "Method-2",
+        "title": "Qui fait quoi sur un projet",
+        "steps": [
+          {
+            "title": "Sur le terrain",
+            "text": "Thierry capte les extérieurs et les vues aériennes par drone ; Hugo scanne les intérieurs et les objets au sol. Les deux préparent la captation ensemble.",
+            "chips": "Drone, Photogrammétrie, Intérieurs, Objets",
+            "placeholder": "Photo de terrain, drone et appareil photo",
+            "src": ""
+          },
+          {
+            "title": "En atelier",
+            "text": "Hugo assemble, nettoie et optimise les modèles pour qu’ils restent légers, avec le rendu travaillé en post-production.",
+            "chips": "Nettoyage, Assemblage, Optimisation, CGI",
+            "placeholder": "Capture de l’interface de traitement",
+            "src": ""
+          },
+          {
+            "title": "En ligne",
+            "text": "Hugo développe l’expérience 3D temps réel pour le web ; Thierry valide avec vous les vues et la maquette du domaine.",
+            "chips": "3D temps réel, Navigation libre, Maquette virtuelle",
+            "placeholder": "Rendu final dans le navigateur",
+            "src": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "CtaBand",
+      "props": {
+        "id": "CtaBand-3",
+        "title": "Parlons de votre lieu.",
+        "text": "Dites-nous ce que vous souhaitez valoriser : nous vous répondons avec une première estimation.",
+        "label": "Estimer un projet",
+        "href": "/contact",
+        "label2": "",
+        "href2": ""
+      }
+    },
+    {
+      "type": "StickyBar",
+      "props": {
+        "id": "StickyBar-4",
+        "text": "Un lieu à valoriser ?",
+        "label": "Estimer un projet",
+        "href": "/contact"
+      }
+    }
+  ],
+  "zones": {}
+}

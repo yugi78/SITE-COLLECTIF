@@ -1,0 +1,127 @@
+{
+  "root": {
+    "props": {
+      "title": "Portfolio | Réalisations de numérisation 3D",
+      "description": "Châteaux, domaines, mobilier : les réalisations du studio, à parcourir par univers."
+    }
+  },
+  "zones": {},
+  "content": [
+    {
+      "type": "PageHeader",
+      "props": {
+        "eyebrow": "Portfolio",
+        "title": "Nos réalisations",
+        "intro": "Des lieux et des objets réels, du château au mobilier. Choisissez un univers pour voir les projets qui vous ressemblent.",
+        "cta1Label": "Estimer un projet",
+        "cta1Href": "/contact",
+        "cta2Label": "",
+        "cta2Href": "",
+        "placeholder": "Visuel ou mosaïque de projets",
+        "src": "",
+        "id": "PageHeader-0"
+      }
+    },
+    {
+      "type": "ProjectsRail",
+      "props": {
+        "title": "Tous les projets",
+        "lead": "",
+        "tags": [
+          {
+            "label": "Patrimoine & culture",
+            "key": "patrimoine"
+          },
+          {
+            "label": "Domaines & lieux",
+            "key": "domaine"
+          },
+          {
+            "label": "Immobilier & chantier",
+            "key": "immobilier"
+          },
+          {
+            "label": "Événementiel & salons",
+            "key": "evenement"
+          },
+          {
+            "label": "Objets & archivage",
+            "key": "objets"
+          }
+        ],
+        "projects": [
+          {
+            "cat": "patrimoine domaine",
+            "place": "Guermantes",
+            "name": "Château de Guermantes",
+            "text": "Parc de 80 hectares. Première livraison en 5 jours.",
+            "value": "80 hectares",
+            "placeholder": "Démo ou image : Château de Guermantes",
+            "src": "",
+            "href": "/projets/guermantes",
+            "status": "publie"
+          },
+          {
+            "cat": "domaine",
+            "place": "Fontenay-Saint-Père",
+            "name": "Domaine du Grand Charme",
+            "text": "Extérieurs captés par drone en une demi-journée, application WebGL.",
+            "value": "8 hectares",
+            "placeholder": "Démo ou image : Domaine du Grand Charme",
+            "src": "",
+            "href": "/projets/grand-charme",
+            "status": "publie"
+          },
+          {
+            "cat": "patrimoine evenement",
+            "place": "Les Mureaux",
+            "name": "Château de Bècheville",
+            "text": "5 niveaux et 58 salles numérisés en 10 jours.",
+            "value": "3 000 m²",
+            "placeholder": "Démo ou image : Château de Bècheville",
+            "src": "",
+            "href": "/projets/becheville",
+            "status": "publie"
+          },
+          {
+            "cat": "domaine immobilier",
+            "place": "Wy-dit-Joli-Village",
+            "name": "Domaine d’Hazeville",
+            "text": "Habitation optimisée pour un chargement léger.",
+            "value": "4 ha · 25 Mo",
+            "placeholder": "Démo ou image : Domaine d’Hazeville",
+            "src": "",
+            "href": "/projets/hazeville",
+            "status": "publie"
+          },
+          {
+            "cat": "objets",
+            "place": "Domaine de Seraincourt",
+            "name": "Chaises Louis XV",
+            "text": "Trois chaises captées en ultra haute définition, mobilier rescapé d’un incendie.",
+            "value": "Ultra HD",
+            "placeholder": "Démo ou image : Chaises Louis XV",
+            "src": "",
+            "href": "/projets/seraincourt",
+            "status": "publie"
+          }
+        ],
+        "gains": [],
+        "layout": "grille",
+        "id": "ProjectsRail-1"
+      }
+    },
+    {
+      "type": "CtaBand",
+      "props": {
+        "title": "Votre lieu a sa place ici ?",
+        "text": "Parlons de votre projet.",
+        "label": "Estimer un projet",
+        "href": "/contact",
+        "label2": "",
+        "href2": "",
+        "id": "CtaBand-2"
+      }
+    }
+  ]
+}

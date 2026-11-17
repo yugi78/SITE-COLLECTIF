@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { ComponentConfig } from "@measured/puck";
-import { Slot, T, mediaFields } from "./shared";
+import {Arrow, Slot, T, mediaFields} from "./shared";
 
 type P = { eyebrow: string; title: string; subtitle: string; cta1Label: string; cta1Href: string; cta2Label: string; cta2Href: string; placeholder: string; src: string; poster: string; launchLabel: string };
 
@@ -45,14 +45,20 @@ export const Hero: ComponentConfig<P> = {
   },
   render: (p) => (
     <header className="hero">
-      <Media placeholder={p.placeholder} src={p.src} poster={p.poster} launchLabel={p.launchLabel} />
-      <div className="hero-in">
-        <small>{p.eyebrow}</small>
-        <h1><T>{p.title}</T></h1>
-        <p><T>{p.subtitle}</T></p>
-        <div className="cta">
-          <a className="btn btn-primary" href={p.cta1Href}>{p.cta1Label}</a>
-          <a className="btn btn-ghost" href={p.cta2Href}>{p.cta2Label}</a>
+      <div className="hero-media">
+        <Media placeholder={p.placeholder} src={p.src} poster={p.poster} launchLabel={p.launchLabel} />
+      </div>
+      <div className="hero-side">
+        <div className="tile dark hero-card">
+          <span className="chip">{p.eyebrow}</span>
+          <div>
+            <h1><T>{p.title}</T></h1>
+            <p><T>{p.subtitle}</T></p>
+          </div>
+        </div>
+        <div className="hero-links">
+          <a className="row" href={p.cta1Href}><span>{p.cta1Label}</span><Arrow dir="down" /></a>
+          <a className="row primary" href={p.cta2Href}><span>{p.cta2Label}</span><Arrow /></a>
         </div>
       </div>
     </header>

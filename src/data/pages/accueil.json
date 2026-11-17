@@ -15,13 +15,86 @@
         "title": "Donnez à vos lieux d’exception une empreinte numérique vivante.",
         "subtitle": "Photo, drone et 3D temps réel, réunis dans une seule visite à parcourir librement.",
         "cta1Label": "Explorer une démo en direct",
-        "cta1Href": "#projets",
+        "cta1Href": "/portfolio",
         "cta2Label": "Estimer un projet",
         "cta2Href": "#contact",
         "placeholder": "Insérer la meilleure démo 3D / WebGL ici (plein écran, chargement rapide)",
         "src": "",
         "poster": "",
         "launchLabel": "Lancer l’expérience"
+      }
+    },
+    {
+      "type": "Offer",
+      "props": {
+        "id": "Offer-1",
+        "title": "Ce que nous produisons pour vous",
+        "lead": "Nous captons votre lieu ou vos objets, puis nous les rendons parcourables en ligne.",
+        "items": [
+          {
+            "title": "Une visite 3D à parcourir librement",
+            "text": "Votre lieu, intérieur et extérieur, dans un navigateur : le visiteur avance, tourne et s’approche comme sur place.",
+            "points": "Photoréaliste, Intérieur et extérieur (drone), Infobulles"
+          },
+          {
+            "title": "Des images et vidéos pour communiquer",
+            "text": "Vidéos animées, photos et vues aériennes tirées du même modèle, pour vos plaquettes, vos réseaux et votre site.",
+            "points": "Vidéo animée, Photo et vidéo aérienne, Site sur mesure"
+          },
+          {
+            "title": "Des objets et assets 3D",
+            "text": "Pièces d’art, mobilier, produits : des modèles fidèles et légers, pour archiver, vendre en ligne ou transmettre.",
+            "points": "Scan d’objets, Optimisation, Archivage"
+          }
+        ],
+        "args": [
+          {
+            "label": "Sans téléchargement ni application"
+          },
+          {
+            "label": "Sur mobile, tablette et ordinateur"
+          },
+          {
+            "label": "Fichiers optimisés pour un chargement léger"
+          },
+          {
+            "label": "Vous restez propriétaire du modèle"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Control",
+      "props": {
+        "eyebrow": "Back-office",
+        "title": "Une visite 3D que vous pilotez vous-même",
+        "lead": "Votre visite n’est pas figée : un éditeur visuel vous donne la main sur le contenu et sur l’application 3D, sans repasser par un développeur.",
+        "items": [
+          {
+            "title": "Modifiez vos contenus vous-même",
+            "text": "Textes, titres, images, ordre des sections : vous changez vos pages comme dans un éditeur visuel."
+          },
+          {
+            "title": "Ajoutez et déplacez vos points d’intérêt",
+            "text": "[[Placez une infobulle sur la carte 3D et rattachez-lui un texte, une photo ou un lien.]]"
+          },
+          {
+            "title": "Créez des parcours animés",
+            "text": "[[Définissez des étapes : la caméra glisse d’un point à l’autre, avec l’encart d’information qui l’accompagne.]]"
+          },
+          {
+            "title": "Configurez l’interface",
+            "text": "[[Menu déroulant des vues, boutons, couleurs : n’activez que ce dont vous avez besoin.]]"
+          },
+          {
+            "title": "Un système modulaire",
+            "text": "[[Chaque fonction est un module : nous ajoutons ce qui sert votre projet, rien de plus.]]"
+          }
+        ],
+        "placeholder": "Démo vidéo : l’éditeur en action",
+        "src": "",
+        "note": "Chaque projet est configuré selon votre besoin.",
+        "id": "Control-2"
       }
     },
     {
@@ -66,95 +139,7 @@
             "src": ""
           }
         ],
-        "id": "SectorCards-1"
-      }
-    },
-    {
-      "type": "ProjectsRail",
-      "props": {
-        "title": "Des lieux réels, des résultats concrets",
-        "lead": "Touchez un univers pour voir les projets qui vous ressemblent.",
-        "tags": [
-          {
-            "label": "Patrimoine & culture",
-            "key": "patrimoine"
-          },
-          {
-            "label": "Domaines & lieux",
-            "key": "domaine"
-          },
-          {
-            "label": "Immobilier & chantier",
-            "key": "immobilier"
-          },
-          {
-            "label": "Événementiel & salons",
-            "key": "evenement"
-          },
-          {
-            "label": "Objets & archivage",
-            "key": "objets"
-          }
-        ],
-        "projects": [
-          {
-            "cat": "patrimoine domaine",
-            "place": "Guermantes",
-            "name": "Château de Guermantes",
-            "text": "Parc de 80 hectares. Première livraison en 5 jours.",
-            "value": "80 hectares",
-            "placeholder": "Démo ou image : Château de Guermantes",
-            "src": "",
-            "href": "/projets/guermantes",
-            "status": "publie"
-          },
-          {
-            "cat": "domaine",
-            "place": "Fontenay-Saint-Père",
-            "name": "Domaine du Grand Charme",
-            "text": "Extérieurs captés par drone en une demi-journée, application WebGL.",
-            "value": "8 hectares",
-            "placeholder": "Démo ou image : Domaine du Grand Charme",
-            "src": "",
-            "href": "/projets/grand-charme",
-            "status": "publie"
-          },
-          {
-            "cat": "patrimoine evenement",
-            "place": "Les Mureaux",
-            "name": "Château de Bècheville",
-            "text": "5 niveaux et 58 salles numérisés en 10 jours.",
-            "value": "3 000 m²",
-            "placeholder": "Démo ou image : Château de Bècheville",
-            "src": "",
-            "href": "/projets/becheville",
-            "status": "publie"
-          },
-          {
-            "cat": "domaine immobilier",
-            "place": "Wy-dit-Joli-Village",
-            "name": "Domaine d’Hazeville",
-            "text": "Habitation optimisée pour un chargement léger.",
-            "value": "4 ha · 25 Mo",
-            "placeholder": "Démo ou image : Domaine d’Hazeville",
-            "src": "",
-            "href": "/projets/hazeville",
-            "status": "publie"
-          },
-          {
-            "cat": "objets",
-            "place": "Domaine de Seraincourt",
-            "name": "Chaises Louis XV",
-            "text": "Trois chaises captées en ultra haute définition, mobilier rescapé d’un incendie.",
-            "value": "Ultra HD",
-            "placeholder": "Démo ou image : Chaises Louis XV",
-            "src": "",
-            "href": "/projets/seraincourt",
-            "status": "publie"
-          }
-        ],
-        "gains": [],
-        "id": "ProjectsRail-2"
+        "id": "SectorCards-3"
       }
     },
     {
@@ -184,7 +169,7 @@
           }
         ],
         "note": "",
-        "id": "Stats-3"
+        "id": "Stats-4"
       }
     },
     {
@@ -212,7 +197,7 @@
             "text": "Vous modifiez textes et infobulles vous-même."
           }
         ],
-        "id": "Commitments-4"
+        "id": "Commitments-5"
       }
     },
     {
@@ -229,35 +214,25 @@
             "author": "[[Prénom Nom, fonction, monument]]"
           }
         ],
-        "id": "Quotes-5"
+        "id": "Quotes-6"
       }
     },
     {
-      "type": "Contact",
+      "type": "CtaBand",
       "props": {
-        "id": "Contact-6",
-        "title": "Un lieu à valoriser ? Parlons de votre projet.",
-        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
-        "phone": "[[06 00 00 00 00]]",
-        "phoneHref": "tel:+33000000000",
-        "qrPlaceholder": "QR code vers cette page",
-        "qrSrc": "",
-        "accessKey": "VOTRE_CLE_WEB3FORMS",
-        "subject": "Nouvelle demande d’estimation",
-        "redirect": "",
-        "button": "Recevoir mon estimation",
-        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
-        "rdvLabel": "Réserver 30 min en visio",
-        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
-        "whatsapp": "33600000000",
-        "email": "contact@votre-domaine.fr",
-        "linkedin": "https://www.linkedin.com/in/votre-profil"
+        "title": "Un lieu ou une pièce à valoriser ?",
+        "text": "Décrivez-nous votre lieu ou vos pièces : nous vous répondons avec une première estimation.",
+        "label": "Estimer un projet",
+        "href": "/contact",
+        "label2": "Voir nos réalisations",
+        "href2": "/portfolio",
+        "id": "CtaBand-7"
       }
     },
     {
       "type": "StickyBar",
       "props": {
-        "id": "StickyBar-7",
+        "id": "StickyBar-8",
         "text": "Un lieu à valoriser ?",
         "label": "Estimer un projet",
         "href": "#contact"

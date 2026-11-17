@@ -20,10 +20,11 @@ export const ProblemSolution: ComponentConfig<P> = {
   } as any,
   defaultProps: { title: "Ce que vous nous dites, ce que nous faisons", rows: [] },
   render: ({ title, rows }) => (
-    <section className="bg2">
+    <section className="dark">
       <div className="wrap">
         <h2>{title}</h2>
         <div className="ps">
+          <div className="ps-head"><span>Ce que nous entendons</span><span>Ce que nous faisons</span><span>La preuve</span></div>
           {(rows ?? []).map((r, i) => (
             <div className="ps-row" key={i}>
               <div><i>Ce que nous entendons</i><p className="said">« <T>{r.problem}</T> »</p></div>

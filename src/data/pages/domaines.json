@@ -159,25 +159,15 @@
       }
     },
     {
-      "type": "Contact",
+      "type": "CtaBand",
       "props": {
-        "id": "Contact-6",
-        "title": "Un lieu à valoriser ? Parlons de votre projet.",
-        "text": "Dites-nous où il se trouve et ce que vous voulez en faire. Nous répondons sous [[48 h]] avec une première estimation.",
-        "phone": "[[06 00 00 00 00]]",
-        "phoneHref": "tel:+33000000000",
-        "qrPlaceholder": "QR code vers cette page",
-        "qrSrc": "",
-        "accessKey": "VOTRE_CLE_WEB3FORMS",
-        "subject": "Nouvelle demande d’estimation",
-        "redirect": "",
-        "button": "Recevoir mon estimation",
-        "pilot": "[[Premier projet pilote sans engagement : nous capturons une zone test pour que vous jugiez le résultat avant de vous décider.]]",
-        "rdvLabel": "Réserver 30 min en visio",
-        "rdvHref": "https://calendar.example.com/VOTRE-LIEN",
-        "whatsapp": "33600000000",
-        "email": "contact@votre-domaine.fr",
-        "linkedin": "https://www.linkedin.com/in/votre-profil"
+        "title": "Un projet dans ce secteur ?",
+        "text": "Décrivez-nous votre lieu ou vos pièces : nous vous répondons avec une première estimation.",
+        "label": "Estimer un projet",
+        "href": "/contact",
+        "label2": "",
+        "href2": "",
+        "id": "CtaBand-6"
       }
     },
     {

@@ -7,7 +7,7 @@ type P = { title: string; text: string; quote: string; author: string; labelBefo
 function View(p: P) {
   const [pos, setPos] = useState(50);
   return (
-    <section className="bg2">
+    <section className="dark">
       <div className="wrap duo">
         <div className="compare" style={{ "--p": `${pos}%` } as CSSProperties}>
           <Slot className="a" placeholder={p.phBefore} src={p.srcBefore} />

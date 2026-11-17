@@ -9,6 +9,16 @@ export const T = ({ children }: { children?: string }) => (
   </>
 );
 
+/** Texte « roulant » : au survol du lien ou du bouton parent, le texte part vers le haut et sa copie monte prendre sa place. */
+export const Roll = ({ children }: { children?: string }) => (
+  <span className="roll"><span data-t={(children ?? "").replace(/\[\[|\]\]/g, "")}><T>{children}</T></span></span>
+);
+
+/** Flèche simple : au survol du lien parent, elle glisse légèrement (voir CSS). */
+export const Arrow = ({ dir = "right" }: { dir?: "right" | "down" }) => (
+  <i className={`ar ar-${dir}`} aria-hidden="true">{dir === "down" ? "↓" : "→"}</i>
+);
+
 /** Conteneur média : placeholder pointillé, ou image / iframe interactive si une URL est renseignée. */
 export const Slot = ({ placeholder, src, className = "" }: { placeholder?: string; src?: string; className?: string }) => (
   <div className={`portfolio-media-slot ${src ? "filled" : ""} ${className}`} data-placeholder={placeholder}>

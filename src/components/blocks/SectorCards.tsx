@@ -19,6 +19,7 @@ export const SectorCards: ComponentConfig<P> = {
           {(items ?? []).map((s, i) => (
             <a className="card" href={s.href} key={i}>
               <Slot className="r169" placeholder={s.placeholder} src={s.src} />
+              <span className="notch">{String(i + 1).padStart(2, "0")}<i className="na" aria-hidden="true">→</i></span>
               <div className="card-body"><h3>{s.title}</h3><p>{s.text}</p></div>
             </a>
           ))}

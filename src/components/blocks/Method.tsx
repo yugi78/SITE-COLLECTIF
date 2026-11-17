@@ -15,7 +15,7 @@ export const Method: ComponentConfig<P> = {
   } as any,
   defaultProps: { title: "Notre méthode en trois étapes", steps: [] },
   render: ({ title, steps }) => (
-    <section className="bg2">
+    <section className="dark">
       <div className="wrap">
         <h2>{title}</h2>
         <div className="steps">

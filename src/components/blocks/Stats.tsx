@@ -16,7 +16,7 @@ export const Stats: ComponentConfig<P> = {
   } as any,
   defaultProps: { title: "Rapide à capter, léger à diffuser, précis à mesurer", items: [], note: "" },
   render: ({ title, items, note }) => (
-    <section>
+    <section className="grad">
       <div className="wrap">
         <h2>{title}</h2>
         <div className="stats">
